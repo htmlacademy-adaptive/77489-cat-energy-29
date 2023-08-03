@@ -2,36 +2,35 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи/Каталог</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <span class="visually-hidden">На главную</span>
-        <img src="/source/img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта рыжий кот в плаще.">
-      </a>
-      <a class="main-header__logo-text" href="index.html">
-        <span class="visually-hidden">На главную</span>
-        <img src="/source/img/logo-text.svg" width="101" height="18" alt="Логотип сайта cat energy.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container">
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="/source/img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+          <img src="/source/img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item main-navigation__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-navigation__item">
+                <a>Каталог продукции</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container">
@@ -143,7 +142,54 @@
             </div>
             <button class="product-card__button button" type="button">Заказать</button>
           </li>
+          <li class="catalog__card catalog__to-all">
+            <span class="to-all__picture"></span>
+            <h2 class="product-card__title">Показать еще 100500 товаров</h2>
+            <p>На самом деле вкусов гораздо больше!</p>
+            <button class="button button__to-all" type="button">Показать все</button>
+          </li>
         </ul>
+      </section>
+
+      <section class="additional">
+        <h2 class="additional__title">Дополнительные товары</h2>
+        <ul class="additional__list">
+          <li class="additional__item product-card">
+            <h3 class="product-card__title">Сахарозаменитель</h3>
+            <dl class="product-card__attributes attributes">
+              <dt class="attributes__additive">1 упаковка (100 г)</dt>
+              <dd class="attributes__price">200 ₽</dd>
+            </dl>
+            <button class="product-card__button button" type="button">заказать</button>
+          </li>
+          <li class="additional__item product-card">
+            <h3 class="product-card__title">Питьевая вода</h3>
+            <dl class="product-card__attributes attributes">
+              <dt class="attributes__additive">5 литров</dt>
+              <dd class="attributes__price">50 ₽</dd>
+            </dl>
+            <button class="product-card__button button" type="button">заказать</button>
+          </li>
+          <li class="additional__item product-card">
+            <h3 class="product-card__title">Молоко</h3>
+            <dl class="product-card__attributes attributes">
+              <dt class="attributes__additive">1 литр</dt>
+              <dd class="attributes__price">100 ₽</dd>
+            </dl>
+            <button class="product-card__button button" type="button">заказать</button>
+          </li>
+          <li class="additional__item product-card">
+            <h3 class="product-card__title">Витамины</h3>
+            <dl class="product-card__attributes attributes">
+              <dt class="attributes__additive">1 упаковка (30 г)</dt>
+              <dd class="attributes__price">300 ₽</dd>
+            </dl>
+            <button class="product-card__button button" type="button">заказать</button>
+          </li>
+        </ul>
+        <div class="addinational__offer">
+          <p>Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </section>
     </main>
 
@@ -163,29 +209,29 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
+                <img src="/source/img/vkontakte.svg" width="28" height="22" alt="Vkontakte.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
+                <img src="/source/img/youtube.svg" width="28" height="22" alt="Youtube.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
+                <img src="/source/img/telegram.svg" width="28" height="22" alt="Telegram.">
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Сайт разработчика</span>
+          <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img src="/source/img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
           </a>
         </div>
       </div>
     </footer>
-
-
   </body>
 </html>

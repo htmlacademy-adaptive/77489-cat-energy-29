@@ -2,38 +2,126 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Кэт энерджи/</title>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <span class="visually-hidden">На главную</span>
-        <img src="/source/img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта рыжий кот в плаще.">
-      </a>
-      <a class="main-header__logo-text" href="index.html">
-        <span class="visually-hidden">На главную</span>
-        <img src="/source/img/logo-text.svg" width="101" height="18" alt="Логотип сайта cat energy.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="container">
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="/source/img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+          <img src="/source/img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
+        </a>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item main-navigation__item--active">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-navigation__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-navigation__item">
+                <a>Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
+    <main class="main-container">
+      <section class="form-cat">
+        <div class="form-cat__wrapper">
+          <h1 class="form-cat__title">Подбор программы</h1>
+          <p class="form-cat__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="form-cat__data " action="https://echo.htmlacademy.ru/" method="get">
+            <div class="form-cat__info info-cat">
+              <div class="info-cat__item">
+                <label class="info-cat__control">Имя:*
+                  <input class="info-cat__field" type="text" name="cat-name" placeholder="Барсик" required>
+                </label>
+              </div>
+
+              <div class="info-cat__item">
+                <label class="info-cat__control" for="cat-weight">Вес(кг):*</label>
+                  <input class="info-cat__field" type="number" name="cat-weight" placeholder="7" min="0" max="100" required>
+              </label>
+              </div>
+              <div class="info-cat__item">
+                <label class="info-cat__control">Возраст(лет):*</label>
+                  <input class="info-cat__field" type="number" name="cat-age" placeholder="7" min="0" max="30" required>
+              </label>
+              </div>
+            </div>
+
+            <div class="form-cat__info program-choise">
+              <ul class="program-choise__list">
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="radio" name="program-choise" value="weight-loss" checked><span>Похудение</span>
+                  </label>
+                </li>
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="radio" name="program-choise" value="mass-gain"><span>Набор массы</span>
+                  </label>
+                </li>
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="radio" name="program-choise" value="need-advice"><span>Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form-cat__info owner-data">
+              <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
+                <label class="owner-data__control">E-mail:*
+                  <input class="owner-data__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                </label>
+                <label class="owner-data__control">Телефон:*
+                  <input class="owner-data__input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                </label>
+            </div>
+            <div class="form-cat__info owner-data">
+              <h2 class="owner-data__title">Комментарий</h2>
+              <textarea name="comment" cols="35" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+
+            <div class="form-cat__info program-choise">
+              <ul class="program-choise__list">
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="sweetener" checked><span>Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="watter"><span>Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="milk"><span>Молоко</span>
+                  </label>
+                </li>
+                <li class="program-choise__item">
+                  <label class="program-choise__control">
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="vitamins"><span>Витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <button class="form-cat__button button" type="submit">Отправить заявку</button>
+            <p class="form-cat__sign">* — Обязательные поля</p>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -51,24 +139,26 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
+                <img src="/source/img/vkontakte.svg" width="28" height="22" alt="Vkontakte.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
+                <img src="/source/img/youtube.svg" width="28" height="22" alt="Youtube.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
+                <img src="/source/img/telegram.svg" width="28" height="22" alt="Telegram.">
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Сайт разработчика</span>
+          <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img src="/source/img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
           </a>
         </div>
       </div>
