@@ -1,0 +1,45 @@
+.header-wrapper {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger-button {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.hamburger-button-top,
+.hamburger-button-middle,
+.hamburger-button-bottom {
+  height: 2px;
+  background: rgba(0, 0, 0, 1);
+  margin: 2px 0px;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+
+.hamburger-button:hover .hamburger-button-top {
+  transform: rotate(45deg);
+}
+
+.hamburger-button:hover .hamburger-button-middle {
+  opacity: 0;
+}
+
+.hamburger-button:hover .hamburger-button-bottom {
+  transform: rotate(-45deg);
+}

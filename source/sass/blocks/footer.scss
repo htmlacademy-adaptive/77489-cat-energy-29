@@ -1,0 +1,31 @@
+.footer__location {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+}
+
+.lacation-map {
+  margin: 0;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.header__logo-text {
+  text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content:  space-between;
+}
