@@ -7,23 +7,28 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="container">
+      <div class="header-wrapper wrapper">
         <a class="header__logo" href="index.html">
           <span class="visually-hidden">На главную</span>
-          <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
-          <img src="img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
+          <img class="logo" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
         </a>
         <nav class="header-navigation">
           <button class="header-navigation__toggle" type="button">
+          <div class="hamburger-button">
+            <div class="hamburger-button-top"></div>
+            <div class="hamburger-button-middle"></div>
+            <div class="hamburger-button-bottom"></div>
+          </div>
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="header-navigation__wrapper">
             <ul class="header-navigation__list">
               <li class="header-navigation__item header-navigation__item--active">
-                <a href="index.html">Главная</a>
+                <a class="header-navigation__link link" href="index.html">Главная</a>
               </li>
               <li class="header-navigation__item">
-                <a href="catalog.html">Каталог продукции</a>
+                <a class="header-navigation__link link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="header-navigation__item">
                 <a>Подбор программы</a>
@@ -34,10 +39,10 @@
       </div>
     </header>
 
-    <main class="main-container">
+    <main class="main-form">
       <section class="form-cat">
-        <div class="form-cat__wrapper">
-          <h1 class="form-cat__title">Подбор программы</h1>
+        <div class="wrapper">
+          <h1 class="form-cat__title title">Подбор программы</h1>
           <p class="form-cat__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="form-cat__data " action="https://echo.htmlacademy.ru/" method="get">
             <div class="form-cat__info info-cat">
@@ -48,12 +53,12 @@
               </div>
 
               <div class="info-cat__item">
-                <label class="info-cat__control" for="cat-weight">Вес(кг):*</label>
+                <label class="info-cat__control">Вес(кг):*
                   <input class="info-cat__field" type="number" name="cat-weight" placeholder="7" min="0" max="100" required>
               </label>
               </div>
               <div class="info-cat__item">
-                <label class="info-cat__control">Возраст(лет):*</label>
+                <label class="info-cat__control">Возраст(лет):*
                   <input class="info-cat__field" type="number" name="cat-age" placeholder="7" min="0" max="30" required>
               </label>
               </div>
@@ -63,24 +68,24 @@
               <ul class="program-choise__list">
                 <li class="program-choise__item">
                   <label class="program-choise__control">
-                    <input class="program-choise__input" type="radio" name="program-choise" value="weight-loss" checked><span>Похудение</span>
+                    <input class="program-choise__input" type="radio" name="program-choise" value="weight-loss" checked>Похудение
                   </label>
                 </li>
                 <li class="program-choise__item">
                   <label class="program-choise__control">
-                    <input class="program-choise__input" type="radio" name="program-choise" value="mass-gain"><span>Набор массы</span>
+                    <input class="program-choise__input" type="radio" name="program-choise" value="mass-gain">Набор массы
                   </label>
                 </li>
                 <li class="program-choise__item">
                   <label class="program-choise__control">
-                    <input class="program-choise__input" type="radio" name="program-choise" value="need-advice"><span>Не знаю (нужен ваш совет)</span>
+                    <input class="program-choise__input" type="radio" name="program-choise" value="need-advice">Не знаю (нужен ваш совет)
                   </label>
                 </li>
               </ul>
             </div>
 
             <div class="form-cat__info owner-data">
-              <h2 class="owner-data__title">Контактные данные (владельца кота)</h2>
+              <h2 class="owner-data__title title">Контактные данные (владельца кота)</h2>
                 <label class="owner-data__control">E-mail:*
                   <input class="owner-data__input" type="email" name="e-mail" placeholder="kuklachev@gmail.com" required>
                 </label>
@@ -88,8 +93,8 @@
                   <input class="owner-data__input" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
                 </label>
             </div>
-            <div class="form-cat__info owner-data">
-              <h2 class="owner-data__title">Комментарий</h2>
+            <div class="form-cat__info comment">
+              <h2 class="comment__title title">Комментарий</h2>
               <textarea name="comment" cols="35" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
 
@@ -97,17 +102,17 @@
               <ul class="program-choise__list">
                 <li class="program-choise__item">
                   <label class="program-choise__control">
-                    <input class="program-choise__input" type="checkbox" name="program-choise" value="sweetener" checked><span>Сахарозаменитель</span>
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="sweetener" checked>Сахарозаменитель
                   </label>
                 </li>
                 <li class="program-choise__item">
                   <label class="program-choise__control">
-                    <input class="program-choise__input" type="checkbox" name="program-choise" value="watter"><span>Питьевая вода</span>
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="watter">Питьевая вода
                   </label>
                 </li>
                 <li class="program-choise__item">
                   <label class="program-choise__control">
-                    <input class="program-choise__input" type="checkbox" name="program-choise" value="milk"><span>Молоко</span>
+                    <input class="program-choise__input" type="checkbox" name="program-choise" value="milk">Молоко
                   </label>
                 </li>
                 <li class="program-choise__item">
@@ -159,7 +164,7 @@
             </ul>
           </div>
           <div class="footer__copyright copyright">
-            <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="copyright__link copyright__link--text link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
           </div>
         </div>
