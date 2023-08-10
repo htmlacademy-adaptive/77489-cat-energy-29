@@ -1,1 +1,12 @@
-// Начните писать стили здесь
+@import "../sass/common/global.scss";
+@import "../sass/common/variables.scss";
+@import "../sass/common/visually-hidden.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/hero.scss";
+@import "../sass/blocks/programs.scss";
+@import "../sass/blocks/advantages.scss";
+@import "../sass/blocks/example.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/additional.scss";
+@import "../sass/blocks/form-cat.scss";

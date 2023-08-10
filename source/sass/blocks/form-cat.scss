@@ -1,0 +1,97 @@
+.form-cat {
+  color: $default-black;
+}
+
+.form-cat__title {
+  margin-bottom: 37px;
+  padding-top: 27px;
+  line-height: 36px;
+}
+
+.form-cat__subtitle {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+.form-cat__info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-cat__control {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.info-cat__field::placeholder {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .program-choise {
+    margin-bottom: 45px;
+  }
+
+  .program-choise__input {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    padding: 14px 15px;
+  }
+
+.owner-data {
+  margin-bottom: 24px;
+}
+
+.owner-data__title {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+
+.owner-data__control {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.owner-data__input {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 14px 15px;
+}
+
+.comment {
+  margin-bottom: 24px;
+}
+
+.comment__title {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+textarea::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-choise__control {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.program-choise__list {
+  margin-bottom: 34px;
+}
+
+.form-cat__button {
+  margin-bottom: 21px;
+}
+
+.form-cat__sign {
+  margin-bottom: 6px;
+}

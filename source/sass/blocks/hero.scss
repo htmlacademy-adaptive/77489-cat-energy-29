@@ -1,0 +1,42 @@
+.hero {
+  background-color: rgba(81, 79, 84, 1);
+  background-image:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgba(255, 255, 255, 1) 60%),
+    url("../img/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-bottom: 20px; //почему не работает?
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  margin: 0;
+  text-align: center;
+  color: $default-white;
+  padding-top: 27px;
+  margin-bottom: 25px;
+}
+
+.hero__subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $default-white;
+  margin-bottom: 29px;
+}
+
+.hero__img {
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+
+.hero__button {
+  margin: 0 20px;
+  padding: 7px 44px;
+}
