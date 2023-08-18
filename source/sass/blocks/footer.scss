@@ -16,7 +16,14 @@
     width: 565px;
     background-color: $default-white;
     padding: 60px 79px;
+  }
+}
 
+.footer-location-catalog {
+  background-color: $grey-200;
+
+  @media (min-width: $desktop-width) {
+    background-color: $default-white;
   }
 }
 
@@ -31,6 +38,7 @@
   align-items: center;
   gap: 40px;
   padding: 40px 20px;
+  background-color: $grey-200;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
