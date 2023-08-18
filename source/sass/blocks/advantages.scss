@@ -3,17 +3,28 @@
 }
 
 .advantages__title {
-  font-family: "Oswald" sans-serif;
-  font-size: 36px;
   line-height: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
-  margin: 0 20px;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 37px;
+  }
 }
 
 .advantages__item {
-  margin-bottom: 20px;
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
 }
