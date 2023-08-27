@@ -1,11 +1,96 @@
 .additional {
   display: flex;
   flex-direction: column;
+justify-content: center;
   margin-bottom: 35px;
 }
 
+.additional__header {
+  position: relative;
+}
+
+.additional__header::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 2px;
+  background-color: $green-300;
+}
+
+.additional__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .additional__title {
-margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: $default-white;
+  padding: 0 20px;
+  // margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additional__list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.additional__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $grey-200;
+    padding: 28px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $grey-200;
+    border-left: none;
+    border-right: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.additional__item:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.additional-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-box__title {
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .addinational__offer {
@@ -16,6 +101,10 @@ margin-bottom: 50px;
   url("../img/offer-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+  }
 }
 
 .offer__subtitle {

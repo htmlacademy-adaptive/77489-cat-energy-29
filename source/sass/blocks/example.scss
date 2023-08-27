@@ -1,42 +1,113 @@
 .example {
-  background-color: rgba(234, 234, 234, 1);
+  background-color: $grey-100;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, $grey-100 30%, $default-white 30%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to top, $grey-100 80%, $default-white 80%);
+  }
 }
 
 .example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__box {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+  gap: 55px;
+  }
 }
 
 .example__title {
-  font-family: "Oswald" sans-serif;
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 20px;
   padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 5px;
+  }
+}
+
+.example__subtitle {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.example__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 436px;
+    gap: 55px;
+    padding-bottom: 75px;
+  }
 }
 
 .example__list {
+  margin: 0;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  gap: 43px;
+  margin-bottom: 20px;
 }
 
 .example__number {
   font-family: "Oswald" sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
   font-size: 12px;
   line-height: 12px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__result {
-  font-family: "Oswald" sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
 }

@@ -1,20 +1,57 @@
+.programs {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+}
+
 .programs-weight {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: $grey-200;
   margin-bottom: 20px;
-  padding: 30px 20px 18px 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-left: 52px;
+    padding-bottom: 55px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs-weight__title {
-  font-family: "Oswald" sans-serif;
   font-size: 24px;
   line-height: 37px;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs-weight__decription {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .programs-weight__link {
@@ -24,4 +61,9 @@
   font-weight: normal;
   color:rgba(0, 0, 0, 1);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
