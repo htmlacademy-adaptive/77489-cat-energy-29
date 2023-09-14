@@ -37,6 +37,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-left: 90px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -55,6 +56,7 @@
 }
 
 .programs-weight__link {
+  position: relative;
   font-family: "Oswald" sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -62,8 +64,26 @@
   color:rgba(0, 0, 0, 1);
   text-transform: uppercase;
 
+  &::after {
+    position: absolute;
+    background-image: url(../img/arrow.svg);
+
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.programs-weight--slim {
+  background-position: 20px 21px;
+  background-image: url("../img/slim.svg");
+  background-repeat: no-repeat;
+}
+
+.programs-weight--pro {
+  background-position: 20px 21px;
+  background-image: url("../img/pro.svg");
+  background-repeat: no-repeat;
 }

@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  counter-reset: advantages-counter;
 
   @media (min-width: $tablet-width) {
     gap: 37px;
@@ -24,7 +25,40 @@
 }
 
 .advantages__item {
+  position: relative;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-left: 80px;
+
   @media (min-width: $tablet-width) {
     width: 250px;
+
+    &::after {
+      position: absolute;
+      left: 125px;
+      top: 40px;
+      font-size: 280px;
+      line-height: 280px;
+      color: $grey-200;
+      counter-increment: advantages-counter;
+      content: counter(advantages-counter);
+    }
   }
+}
+
+.advantages__item--leaf {
+  background-image: url(../img/leaf.svg);
+}
+
+.advantages__item--washing {
+  background-image: url(../img/washing.svg);
+}
+
+.advantages__item--cutlery {
+  background-image: url(../img/cutlery.svg);
+}
+
+.advantages__item--clock {
+  background-image: url(../img/clock.svg);
 }

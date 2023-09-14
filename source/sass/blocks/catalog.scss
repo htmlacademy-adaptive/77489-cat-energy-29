@@ -51,6 +51,8 @@
 
 .product-card__attributes {
   grid-area: attributes;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-card__button {
@@ -81,6 +83,8 @@
 .product-card__subtitle {
   margin-bottom: 20px;
 }
+
+
 
 .button__to-all {
   color: rgba(68, 68, 68, 1);

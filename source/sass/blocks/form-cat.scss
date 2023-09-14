@@ -1,5 +1,17 @@
+.header-form {
+  border-bottom: 1px solid $grey-900;
+}
 .form-cat {
   color: $default-black;
+}
+
+.form-cat__wrapper {
+  padding: 0 20px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
 }
 
 .form-cat__title {
@@ -38,6 +50,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
@@ -84,6 +97,12 @@
     }
 }
 
+.form-cat__program {
+  border-top: 1px solid $grey-900;
+  border-bottom: 1px solid $grey-900;
+  margin-bottom: 26px;
+}
+
 .program-choise {
 
   @media (min-width: $tablet-width) {
@@ -128,6 +147,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px;
     margin-bottom: 76px;
   }
 }

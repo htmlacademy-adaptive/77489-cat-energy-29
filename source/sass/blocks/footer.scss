@@ -27,9 +27,14 @@
   }
 }
 
-.footer-location-map {
+.footer iframe {
   width: 100%;
-  height: auto;
+  border: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .footer__inner {
