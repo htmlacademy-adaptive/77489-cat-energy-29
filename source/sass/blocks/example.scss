@@ -52,9 +52,11 @@
 }
 
 .example__inner {
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +87,7 @@
 }
 
 .example__number {
-  font-family: "Oswald" sans-serif;
+  font-family: $font-secondary;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -103,9 +105,11 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+  width: 77px;
   background-color: $grey-100;
   padding: 0 5px;
   margin-top: 7px;
+  margin-bottom: -10px;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
@@ -113,9 +117,30 @@
     line-height: 14px;
     background-color: $default-white;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-100;
+  }
 }
 
 .example__result {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.example__desc {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;

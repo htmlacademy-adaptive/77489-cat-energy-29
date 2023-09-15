@@ -2,11 +2,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
+}
+
+.programs__list {
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 45px;
   }
 }
 
@@ -57,7 +59,7 @@
 
 .programs-weight__link {
   position: relative;
-  font-family: "Oswald" sans-serif;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
