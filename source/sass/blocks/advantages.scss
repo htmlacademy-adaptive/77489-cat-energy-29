@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  counter-reset: advantages-counter;
 
   @media (min-width: $tablet-width) {
     gap: 37px;
@@ -24,7 +25,45 @@
 }
 
 .advantages__item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 0 40px;
+  padding-left: 80px;
+
   @media (min-width: $tablet-width) {
-    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 230px;
+    height: 280px;
+    padding: 0;
+    padding-top: 140px;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 280px;
+      line-height: 280px;
+      color: $grey-200;
+      z-index: -2;
+      counter-increment: advantages-counter;
+      content: counter(advantages-counter);
+    }
   }
+}
+
+.advantages__item--leaf {
+  background-image: url("../img/leaf.svg");
+}
+
+.advantages__item--washing {
+  background-image: url("../img/washing.svg");
+}
+
+.advantages__item--cutlery {
+  background-image: url("../img/cutlery.svg");
+}
+
+.advantages__item--clock {
+  background-image: url("../img/clock.svg");
 }

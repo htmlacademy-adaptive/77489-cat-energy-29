@@ -2,11 +2,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
+}
 
+.programs__list {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 45px;
   }
 }
 
@@ -37,6 +38,7 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-left: 90px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -55,15 +57,33 @@
 }
 
 .programs-weight__link {
-  font-family: "Oswald" sans-serif;
+  position: relative;
+  font-family: $font-secondary;
   font-size: 16px;
   line-height: 16px;
   font-weight: normal;
-  color:rgba(0, 0, 0, 1);
+  color: $default-black;
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    background-image: url("../img/arrow.svg");
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.programs-weight--slim {
+  background-position: 20px 21px;
+  background-image: url("../img/slim.svg");
+  background-repeat: no-repeat;
+}
+
+.programs-weight--pro {
+  background-position: 20px 21px;
+  background-image: url("../img/pro.svg");
+  background-repeat: no-repeat;
 }
