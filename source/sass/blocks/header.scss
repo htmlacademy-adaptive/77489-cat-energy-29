@@ -126,6 +126,7 @@
   @media (min-width: $tablet-width) {
     &--active {
       position: relative;
+
       &::after {
         content: "";
         position: absolute;
