@@ -1,7 +1,7 @@
 .additional {
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   margin-bottom: 35px;
 }
 
@@ -98,7 +98,7 @@ justify-content: center;
   min-height: 290px;
   background-color: rgba(104, 183, 56, 1);
   background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-  url("../img/offer-background.jpg");
+    url("../img/offer-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
