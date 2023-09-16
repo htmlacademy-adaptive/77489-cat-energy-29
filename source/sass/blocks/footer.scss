@@ -1,4 +1,7 @@
 .footer {
+  max-width: 1440px;
+  margin: 0 auto;
+
   @media (min-width: $desktop-width) {
     position: relative;
   }
@@ -27,9 +30,14 @@
   }
 }
 
-.footer-location-map {
+.footer iframe {
   width: 100%;
-  height: auto;
+  border: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .footer__inner {
@@ -74,6 +82,17 @@
   }
 }
 
+.footer__social {
+  border-top: 1px solid $grey-900;
+  padding-top: 20px;
+  border-bottom: 1px solid $grey-900;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -82,7 +101,7 @@
 
 .footer-copyright {
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 

@@ -2,7 +2,7 @@
   line-height: 36px;
   margin-bottom: 40px;
 
-  @media (min-width: $tablet-width){
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-top: 65px;
@@ -12,20 +12,24 @@
 
 .catalog__products {
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
-    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
   }
 }
 
 .catalog__card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "product title"
-                       "product attributes"
-                       "button button";
+  grid-template-areas:
+    "product title"
+    "product attributes"
+    "button button";
   padding-top: 20px;
   padding-bottom: 25px;
 
@@ -47,10 +51,16 @@
 
 .product-card__title {
   grid-area: product;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .product-card__attributes {
   grid-area: attributes;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-card__button {
@@ -67,15 +77,7 @@
   @media (min-width: $tablet-width) {
     background: none;
     border: 2px solid $grey-200;
-
   }
-}
-
-.product-card__title {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin-bottom: 8px;
 }
 
 .product-card__subtitle {
@@ -83,6 +85,6 @@
 }
 
 .button__to-all {
-  color: rgba(68, 68, 68, 1);
-  background-color: rgba(242, 242, 242, 1);
+  color: $color-font;
+  background-color: $grey-200;
 }
