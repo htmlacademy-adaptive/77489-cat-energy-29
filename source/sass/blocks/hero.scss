@@ -14,14 +14,13 @@
   @media (min-width: $desktop-width) {
     padding-top: 180px;
     background-image:
-    linear-gradient(to left, $green-400 50%, $default-white 50%),
-    url("../img/hero-background-desktop.jpg");
+          linear-gradient(to left, $green-400 50%, $default-white 50%),
+          url("../img/hero-background-desktop.jpg");
     background-repeat: no-repeat;
     background-size:
       100% 100%,
       720px 694px;
     background-position: right bottom;
-
   }
 }
 
@@ -32,7 +31,6 @@
   @media (min-width: $tablet-width) {
     position: relative;
   }
-
 }
 
 .hero__title {
