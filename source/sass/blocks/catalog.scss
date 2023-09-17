@@ -10,7 +10,7 @@
   }
 }
 
-.catalog__products {
+.catalog__list {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -57,6 +57,10 @@
   margin-bottom: 8px;
 }
 
+.product-card__link-title {
+  color: $color-font;
+}
+
 .product-card__attributes {
   grid-area: attributes;
   display: flex;
@@ -67,7 +71,7 @@
   grid-area: button;
 }
 
-.catalog__to-all {
+.product-card__to-all {
   display: flex;
   flex-direction: column;
   align-items: center;
