@@ -105,7 +105,7 @@
   @media (min-width: $tablet-width) {
     height: 200px;
     background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/offer-background-tablet.jpg");
+        url("../img/offer-background-tablet.jpg");
     background-size: cover;
   }
 }
@@ -113,8 +113,8 @@
 @media (min-resolution: 2dppx) {
   .addinational__offer {
     background-color: rgba(104, 183, 56, 1);
-  background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/offer-background @2x.jpg");
+    background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/offer-background @2x.jpg");
     background-size: cover;
   }
 }
