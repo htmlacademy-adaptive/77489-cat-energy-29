@@ -83,13 +83,6 @@
 }
 
 .footer__logo-text {
-  display: block;
-  content: "";
-  mask-image: url("../img/sprite.svg#logo-text");
-  background-color: $black-100;
-  width: 128px;
-  height: 24px;
-
   &:active {
     opacity: 30%;
   }

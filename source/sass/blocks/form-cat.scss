@@ -120,10 +120,42 @@
   padding: 20px;
 }
 
-.program-choise__input {
+.program-choise__control {
   font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.program-choise__input {
   padding: 14px 15px;
+}
+
+.program-choise__input[type="radio"] {
+  border: 1px solid $grey-200;
+  border-radius: 50%;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  margin: 0;
+  margin-right: 15px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.program-choise__input[type="radio"]:checked {
+  background-image: url("../img/radio.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: center;
 }
 
 .owner-data {
@@ -303,6 +335,33 @@ textarea::placeholder {
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.additional-form__input[type="checkbox"] {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid $grey-200;
+  border-radius: 4px;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  margin-right: 15px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.additional-form__input[type="checkbox"]:checked {
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  background-position: center;
 }
 
 .additional-form__button-box {
