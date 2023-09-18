@@ -1,11 +1,20 @@
 .hero {
-  background-color: rgba(81, 79, 84, 1);
+  background-color: $green;
   background-image:
-    linear-gradient(to bottom, $green 60%, $default-white 60%),
-    url("../img/hero-background.jpg");
+    linear-gradient(to bottom, $green 63%, $default-white 63%),
+    url("../img/hero-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   margin-bottom: 20px;
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image:
+  //     linear-gradient(to bottom, $green 63%, $default-white 63%),
+  //     url("../img/hero-background-mobile @2x.jpg");
+  //     background-repeat: no-repeat;
+  //     background-position: top center;
+  //     background-size: 320px 302px;
+  // }
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -20,8 +29,14 @@
     background-size:
       100% 100%,
       720px 694px;
-    background-position: right bottom;
+    background-position: right;
+    // margin-top: -119px;
   }
+
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/hero-background-desktop @2x.jpg");
+  //   background-size: contain;
+  // }
 }
 
 .hero__wrapper {
