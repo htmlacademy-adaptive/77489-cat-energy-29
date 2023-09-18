@@ -82,6 +82,19 @@
   }
 }
 
+.footer__logo-text {
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#logo-text");
+  background-color: $black-100;
+  width: 128px;
+  height: 24px;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
 .footer__social {
   border-top: 1px solid $grey-900;
   padding-top: 20px;
@@ -117,6 +130,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $color-font;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .social__link--vk {
