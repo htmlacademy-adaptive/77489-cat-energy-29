@@ -7,7 +7,7 @@
   }
 }
 
-.header-wrapper {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@
   }
 }
 
-.logo-text {
+.logo-text { // вынести в отдельный файл, 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,11 +50,8 @@
   min-height: 38px;
 }
 
-.header-navigation__toggle {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  z-index: 2;
+.header__toggle {
+  position: relative;
   display: block;
   width: 24px;
   height: 24px;
@@ -67,11 +64,11 @@
   }
 }
 
-.header-navigation__toggle.header-navigation--nojs {
+.header__toggle--nojs {
   display: none;
 }
 
-.header-navigation--closed .header-navigation__toggle::before {
+.header__toggle::before {
   content: "";
   position: absolute;
   top: 0;
@@ -91,7 +88,7 @@
     display: none;
   }
 
-  .header-navigation--nojs .header-navigation__toggle {
+  .header-navigation--nojs .header__toggle {
     display: none;
   }
 }

@@ -56,26 +56,6 @@
   }
 }
 
-.programs-weight__link {
-  position: relative;
-  font-family: $font-secondary;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: normal;
-  color: $default-black;
-  text-transform: uppercase;
-
-  &::after {
-    position: absolute;
-    background-image: url("../img/arrow.svg");
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
 .programs-weight--slim {
   background-position: 20px 21px;
   background-image: url("../img/slim.svg");
@@ -86,4 +66,28 @@
   background-position: 20px 21px;
   background-image: url("../img/pro.svg");
   background-repeat: no-repeat;
+}
+
+.programs-weight__link {
+  display: flex;
+
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $default-black;
+  text-transform: uppercase;
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url("../img/sprite.svg#icon-arrow");
+    width: 24px;
+    height: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
