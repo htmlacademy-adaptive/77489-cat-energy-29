@@ -12,6 +12,7 @@
 }
 
 .programs-weight {
+  position: relative;
   background-color: $grey-200;
   margin-bottom: 20px;
   padding-top: 30px;
@@ -56,16 +57,60 @@
   }
 }
 
-.programs-weight--slim {
-  background-position: 20px 21px;
+.programs-weight--slim::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 21px;
+  left: 27px;
   background-image: url("../img/slim.svg");
   background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: auto;
+    right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 65px;
+    left: 60px;
+    right: auto;
+  }
 }
 
-.programs-weight--pro {
-  background-position: 20px 21px;
+.programs-weight--pro::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 21px;
+  left: 27px;
   background-image: url("../img/pro.svg");
   background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    left: auto;
+    right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    height: 97px;
+    top: 70px;
+    left: 50px;
+    right: auto;
+  }
 }
 
 .programs-weight__link {

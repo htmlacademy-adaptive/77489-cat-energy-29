@@ -62,3 +62,26 @@
     display: none;
   }
 }
+
+.header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $default-black;
+    z-index: 3;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

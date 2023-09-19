@@ -14,28 +14,6 @@
   }
 }
 
-.header-navigation--opened .header-navigation__toggle {
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: $default-black;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
 .header-navigation__list {
   top: 65px;
 
