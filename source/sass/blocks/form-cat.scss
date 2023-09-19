@@ -110,6 +110,10 @@
     padding-top: 23px;
     border: 1px solid $grey-300;
     margin-bottom: 45px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -121,6 +125,8 @@
 }
 
 .program-choise__control {
+  display: flex;
+  align-items: center;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 18px;
@@ -133,6 +139,7 @@
 
 .program-choise__input {
   padding: 14px 15px;
+  width: 100%;
 }
 
 .program-choise__input[type="radio"] {
@@ -210,6 +217,7 @@
 }
 
 .owner-data__box {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -247,6 +255,18 @@
     font-size: 20px;
     line-height: 29px;
   }
+}
+
+.owner-data__input--email {
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.owner-data__input--phone {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .comment {
@@ -331,6 +351,8 @@ textarea::placeholder {
 
 
 .additional-form__control {
+  display: flex;
+  align-items: center;
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;

@@ -61,6 +61,14 @@
   }
 }
 
+.footer-location {
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
+}
+
 .footer-location__title {
   font-size: 16px;
   line-height: 20px;
@@ -189,6 +197,10 @@
   &:active {
     opacity: 30%;
   }
+}
+
+.footer-copyright__link {
+  width: max-content;
 }
 
 .footer-copyright__svg {
