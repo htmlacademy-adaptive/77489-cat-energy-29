@@ -152,44 +152,15 @@
   }
 }
 
-.offer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+.additional__button {
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-around;
+    min-width: 632px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
-    justify-content: space-evenly;
+    min-width: 280px;
   }
 }
 
-.offer__icon {
-  width: 78px;
-  height: 80px;
-  background-image: url("../img/icon-offer.svg");
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 83px;
-    margin: 0;
-  }
-}
-
-.offer__subtitle {
-  font-size: 16px;
-  line-height: 20px;
-  width: 160px;
-  margin: 0 auto;
-  text-align: center;
-  color: $default-white;
-
-  @media (min-width: $tablet-width) {
-    width: 160px;
-  }
-}

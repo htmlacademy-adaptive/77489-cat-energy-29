@@ -42,12 +42,6 @@
   }
 }
 
-.header__toggle--nojs {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .header__toggle::before {
   content: "";
   position: absolute;
