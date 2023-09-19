@@ -1,0 +1,42 @@
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.logo {
+  width: 33px;
+  height: 38px;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.logo__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#logo-text");
+  background-color: $black-100;
+  width: 118px;
+  height: 21px;
+
+  &:hover {
+    background-color: $black-300;
+  }
+
+  &:active {
+    background-color: $black-500;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 0;
+    transform: none;
+    position: relative;
+  }
+}

@@ -70,7 +70,8 @@
 
 .programs-weight__link {
   display: flex;
-
+  align-items: center;
+  gap: 15px;
   font-family: $font-secondary;
   font-size: 16px;
   line-height: 16px;
@@ -86,8 +87,13 @@
     height: 12px;
   }
 
+  &:hover {
+    opacity: 30%;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    gap: 25px;
   }
 }
