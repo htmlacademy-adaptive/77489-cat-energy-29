@@ -89,7 +89,6 @@
   }
 }
 
-<<<<<<< HEAD
 .additional-box {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -99,8 +98,6 @@
   }
 }
 
-=======
->>>>>>> module6-task1
 .additional-box__title {
   font-size: 16px;
   line-height: 16px;
@@ -155,7 +152,6 @@
   }
 }
 
-<<<<<<< HEAD
 .offer {
   display: flex;
   flex-direction: column;
@@ -182,15 +178,6 @@
     width: 80px;
     height: 83px;
     margin: 0;
-=======
-.offer__wrapper {
-  background-image: url("../img/icon-offer.svg");
-  background-repeat: no-repeat;
-  background-position: top 59px center;
-
-  @media (min-width: $tablet-width) {
-    background-position: top 57px left 57px;
->>>>>>> module6-task1
   }
 }
 
@@ -201,15 +188,8 @@
   margin: 0 auto;
   text-align: center;
   color: $default-white;
-<<<<<<< HEAD
 
   @media (min-width: $tablet-width) {
     width: 160px;
-=======
-  padding-top: 187px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 77px;
->>>>>>> module6-task1
   }
 }
