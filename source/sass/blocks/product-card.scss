@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "product title"
-                        "product attributes"
-                        "button button";
+    "product attributes"
+    "button button";
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
@@ -94,14 +94,9 @@
 }
 
 .product-card__attributes:not(:last-child) {
-
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
   }
-}
-
-.product-card__link-title {
-  color: $color-font;
 }
 
 .product-card__to-all {
