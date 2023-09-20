@@ -46,6 +46,8 @@
   border-bottom: 1px solid $grey-900;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
     border: none;
   }
 }

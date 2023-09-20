@@ -14,8 +14,8 @@
     <title>HTML Academy: Кэт энерджи/Каталог</title>
   </head>
   <body class="page__body">
-    <header class="header header--catalog">
-      <div class="header__wrapper wrapper">
+    <header class="header header--index">
+      <div class="header-wrapper wrapper">
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
           <picture>
@@ -23,12 +23,12 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="60" height="50">
             <img class="logo" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
           </picture>
-          <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
+          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
         </a>
-        <button class="header__toggle header__toggle--closed header__toggle--nojs" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <nav class="header-navigation header-navigation--closed header-navigation--nojs">
+          <button class="header-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="header-navigation__wrapper">
             <ul class="header-navigation__list list-none">
               <li class="header-navigation__item">
@@ -303,7 +303,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item catalog__item--to-all">
+            <li class="catalog__item catalog-item--to-all">
               <article class="catalog-cards product-card product-card__to-all">
                 <div class="product-card__wrapper product-card__wrapper--to-all">
                   <div class="product-card__inner product-card__inner--to-all">

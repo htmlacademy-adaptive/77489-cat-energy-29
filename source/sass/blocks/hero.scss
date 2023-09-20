@@ -6,15 +6,6 @@
   background-position: top;
   margin-bottom: 20px;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image:
-  //     linear-gradient(to bottom, $green 63%, $default-white 63%),
-  //     url("../img/hero-background-mobile @2x.jpg");
-  //     background-repeat: no-repeat;
-  //     background-position: top center;
-  //     background-size: 320px 302px;
-  // }
-
   @media (min-width: $tablet-width) {
     background: none;
   }
@@ -26,11 +17,6 @@
     background-repeat: no-repeat;
     background-position: right;
   }
-
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("../img/hero-background-desktop @2x.jpg");
-  //   background-size: contain;
-  // }
 }
 
 .hero__wrapper {
