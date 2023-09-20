@@ -39,6 +39,8 @@
 .additional-form__control {
   display: flex;
   align-items: center;
+  color: $color-font;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
