@@ -1,7 +1,13 @@
 .header-navigation {
   position: relative;
   width: auto;
+  min-height: 65px;
+  background-color: $default-white;
   z-index: 2;
+}
+
+.header-navigation__wrapper {
+  position: absolute;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -15,8 +21,6 @@
 }
 
 .header-navigation__list {
-  position: absolute;
-  background-color: $default-white;
   top: 35px;
   left: 0;
 

@@ -87,7 +87,7 @@
   background-color: $bg-grey;
 }
 
-.slider__button:hover + .slider-line,
-.slider__button:focus + .slider-line {
+.slider__button:hover + .slider__line,
+.slider__button:focus + .slider__line {
   background-color: $green-300;
 }

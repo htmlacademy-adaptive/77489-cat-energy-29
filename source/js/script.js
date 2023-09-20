@@ -13,11 +13,11 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('header-navigation--opened');
   }
 
-  if (navToogle.classList.contains('header__toggle--closed')) {
-    navToogle.classList.remove('header__toggle--closed');
-    navToogle.classList.add('header__toggle--opened');
+  if (navToggle.classList.contains('header__toggle--closed')) {
+    navToggle.classList.remove('header__toggle--closed');
+    navToggle.classList.add('header__toggle--opened');
   } else {
-    navToogle.classList.add('header__toggle--closed');
-    navToogle.classList.remove('header__toggle--opened');
+    navToggle.classList.add('header__toggle--closed');
+    navToggle.classList.remove('header__toggle--opened');
   }
 });

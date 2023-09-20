@@ -134,16 +134,28 @@
   color: $default-black;
   text-transform: uppercase;
 
-  &::after {
-    display: block;
-    content: "";
-    background-image: url("../img/sprite.svg#icon-arrow");
-    width: 24px;
-    height: 12px;
+  &:active {
+    opacity: 30%;
   }
 
-  &:hover {
-    opacity: 30%;
+  &::after {
+    content: "";
+    background-image: url("../img/icon-arrow.svg");
+    width: 32px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: block;
+  }
+
+  &:hover::after {
+    background-image: url("../img/icon-arrow2.svg");
+    width: 32px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
   }
 
   @media (min-width: $tablet-width) {

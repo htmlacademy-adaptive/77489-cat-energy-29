@@ -36,14 +36,10 @@
   padding-top: 14px;
   padding-bottom: 13px;
   padding-right: 15px;
-  border-color: $grey-300;
+  border: 1px solid $grey-300;
 
   &:hover {
     border-color: $grey-700;
-  }
-
-  &:err {
-    border-color: $green;
   }
 
   @media (min-width: $tablet-width) {
@@ -60,5 +56,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29px;
+  }
+}
+
+.info-cat__field--error {
+  border: 1px solid $color-error;
+
+  &:hover {
+    border-color: $color-error;
   }
 }

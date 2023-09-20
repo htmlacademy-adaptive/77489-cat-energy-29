@@ -56,6 +56,7 @@
               <div class="form-cat__info info-cat">
                 <div class="info-cat__item">
                   <label class="info-cat__control" for="cat_name">Имя:*</label>
+                  <!-- чтобы подключить стили ошибки использовать класс info-cat__field--error -->
                   <input class="info-cat__field" type="text" id="cat_name" name="cat-name" placeholder="Барсик" required>
                 </div>
                 <div class="info-cat__item">
@@ -99,11 +100,14 @@
               <div class="form-cat__wrapper owner-data__inner wrapper">
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="e-mail-owner">E-mail:*</label>
-                  <input class="owner-data__input owner-data__input--email" type="email" id="e-mail-owner" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                  <!-- чтобы подключить стили ошибки использовать класс owner-data__input--error для input и owner-data__svg--error для div-->
+                  <input class="owner-data__input owner-data__input-email" type="email" id="e-mail-owner" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                  <div class="owner-data__svg-email"></div>
                 </div>
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="phone-owner">Телефон:*</label>
-                  <input class="owner-data__input owner-data__input--phone" type="tel" id="phone-owner" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                  <input class="owner-data__input owner-data__input-phone" type="tel" id="phone-owner" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                  <div class="owner-data__svg-phone"></div>
                 </div>
               </div>
             </div>
@@ -200,5 +204,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
