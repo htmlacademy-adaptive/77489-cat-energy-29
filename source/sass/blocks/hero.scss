@@ -1,10 +1,9 @@
 .hero {
-  background-color: rgba(81, 79, 84, 1);
   background-image:
-    linear-gradient(to bottom, $green 60%, $default-white 60%),
-    url("../img/hero-background.jpg");
+    url("../img/hero-background-mobile.jpg"),
+    linear-gradient(to bottom, $bg-green 64%, $default-white 64%);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -12,15 +11,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 180px;
     background-image:
-      linear-gradient(to left, $green-400 50%, $default-white 50%),
-      url("../img/hero-background-desktop.jpg");
+      url("../img/hero-background-desktop.jpg"),
+      linear-gradient(to left, $bg-green 50%, $default-white 50%);
     background-repeat: no-repeat;
-    background-size:
-      100% 100%,
-      720px 694px;
-    background-position: right bottom;
+    background-position: right;
   }
 }
 
@@ -30,6 +25,10 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 692px;
   }
 }
 
@@ -46,12 +45,12 @@
     font-weight: 400;
     color: $default-black;
     text-align: left;
-    padding-left: 90px;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-left: 80px;
+    padding-top: 159px;
   }
 }
 
@@ -69,13 +68,24 @@
     font-weight: 400;
     color: $default-black;
     text-align: left;
-    padding-left: 90px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
-.hero__img {
+.hero__product {
   margin: 0 auto;
   margin-bottom: 3px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+  }
 }
 
 .hero__button {
@@ -84,9 +94,14 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 215px;
-    left: 190px;
+    left: 150px;
     min-width: max-content;
     padding: 14px 26px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 375px;
+    left: 110px;
   }
 }

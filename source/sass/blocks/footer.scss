@@ -1,8 +1,8 @@
 .footer {
-  max-width: 1440px;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
+    min-width: 1440px;
     position: relative;
   }
 }
@@ -11,6 +11,10 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+  }
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -82,7 +86,24 @@
   }
 }
 
+.footer__logo-text {
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#logo-text");
+  width: 118px;
+  height: 21px;
+
+  &:hover {
+    background-color: $black-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
 .footer__social {
+  width: 100%;
   border-top: 1px solid $grey-900;
   padding-top: 20px;
   border-bottom: 1px solid $grey-900;
@@ -100,6 +121,7 @@
 }
 
 .footer-copyright {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,5 +137,77 @@
 .footer-copyright__link {
   font-size: 16px;
   line-height: 20px;
+  width: max-content;
   color: $color-font;
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.social__link--vk {
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#vk");
+  background-color: $bg-grey;
+  width: 28px;
+  height: 22px;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.social__link--youtube {
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#youtube");
+  background-color: $bg-grey;
+  width: 28px;
+  height: 22px;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.social__link--telegram {
+  display: block;
+  content: "";
+  mask-image: url("../img/sprite.svg#telegram");
+  background-color: $bg-grey;
+  width: 28px;
+  height: 22px;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.footer-copyright__svg {
+  content: "";
+  mask-image: url("../img/sprite.svg#logo-htmlacademy");
+  background-color: $bg-grey;
+  width: 27px;
+  height: 34px;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

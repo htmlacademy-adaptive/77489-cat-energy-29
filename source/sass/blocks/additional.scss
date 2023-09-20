@@ -7,6 +7,26 @@
 
 .additional__header {
   position: relative;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.additioanal__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 70px;
+  }
 }
 
 .additional__header::before {
@@ -20,13 +40,6 @@
   background-color: $green-300;
 }
 
-.additional__inner {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .additional__title {
   position: relative;
   z-index: 2;
@@ -35,15 +48,24 @@
   line-height: 24px;
   background-color: $default-white;
   padding: 0 20px;
-  // margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0 40px;
+  }
+}
+
+.additional__inner {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .additional__list {
+  margin-bottom: 36px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
@@ -52,11 +74,12 @@
 .additional__item {
   padding-top: 13px;
   padding-bottom: 19px;
+  border-top: 1px solid $grey-900;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    border: 2px solid $grey-200;
+    border: 1px solid $grey-900;
     padding: 28px 38px;
   }
 
@@ -67,14 +90,26 @@
     border: 2px solid $grey-200;
     border-left: none;
     border-right: none;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 0;
   }
+}
+
+.additional__item:last-child {
+  border-bottom: 1px solid $grey-900;
 }
 
 .additional__item:not(:last-child) {
   @media (min-width: $tablet-width) {
     border-bottom: none;
+  }
+}
+
+.additional-box {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 894px;
   }
 }
 
@@ -86,11 +121,19 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
 }
 
 .additional__attributes {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
 }
 
 .addinational__offer {
@@ -119,26 +162,14 @@
   }
 }
 
-.offer__wrapper {
-  background-image: url("../img/icon-offer.svg");
-  background-repeat: no-repeat;
-  background-position: top 59px center;
+.additional__button {
+  min-width: 280px;
 
   @media (min-width: $tablet-width) {
-    background-position: top 57px left 57px;
+    min-width: 632px;
   }
-}
 
-.offer__subtitle {
-  font-size: 16px;
-  line-height: 20px;
-  width: 160px;
-  margin: 0 auto;
-  text-align: center;
-  color: $default-white;
-  padding-top: 187px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 77px;
+  @media (min-width: $desktop-width) {
+    min-width: 280px;
   }
 }

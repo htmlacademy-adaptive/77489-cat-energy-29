@@ -14,7 +14,7 @@
     <title>HTML Academy: Кэт энерджи/</title>
   </head>
   <body class="page__body">
-    <header class="header header-form">
+    <header class="header header--index">
       <div class="header-wrapper wrapper">
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
@@ -35,7 +35,7 @@
                 <a class="header-navigation__link link" href="index.html">Главная</a>
               </li>
               <li class="header-navigation__item">
-                <a class="header-navigation__link link" href="catalog.html">Каталог продукции</a>
+                <a class="header-navigation__link link" href="form.html">Каталог продукции</a>
               </li>
               <li class="header-navigation__item header-navigation__item--active">
                 <a class="header-navigation__link link">Подбор программы</a>
@@ -48,7 +48,7 @@
 
     <main class="main-form">
       <section class="form-cat">
-        <div class="form-cat__wrapper">
+        <div class="form-cat__wrapper wrapper">
           <h1 class="form-cat__title title">Подбор программы</h1>
           <p class="form-cat__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
           <form class="form-cat__data " action="https://echo.htmlacademy.ru/" method="get">
@@ -56,6 +56,7 @@
               <div class="form-cat__info info-cat">
                 <div class="info-cat__item">
                   <label class="info-cat__control" for="cat_name">Имя:*</label>
+                  <!-- чтобы подключить стили ошибки использовать класс info-cat__field--error -->
                   <input class="info-cat__field" type="text" id="cat_name" name="cat-name" placeholder="Барсик" required>
                 </div>
                 <div class="info-cat__item">
@@ -67,7 +68,6 @@
                   <input class="info-cat__field" type="number" id="cat_age" name="cat-age" placeholder="7" min="0" max="30" required>
                 </div>
               </div>
-            </div>
 
               <div class="form-cat__program program-choise">
                 <ul class="program-choise__list list-none">
@@ -88,6 +88,7 @@
                   </li>
                 </ul>
               </div>
+            </div>
         </div>
 
             <div class="form-cat__info line owner-data">
@@ -96,14 +97,17 @@
                   <h2 class="owner-data__title title">Контактные данные (владельца кота)</h2>
                 </div>
               </div>
-              <div class="form-cat__wrapper owner-data__inner">
+              <div class="form-cat__wrapper owner-data__inner wrapper">
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="e-mail-owner">E-mail:*</label>
-                  <input class="owner-data__input" type="email" id="e-mail-owner" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                  <!-- чтобы подключить стили ошибки использовать класс owner-data__input--error для input и owner-data__svg--error для div-->
+                  <input class="owner-data__input owner-data__input-email" type="email" id="e-mail-owner" name="e-mail" placeholder="kuklachev@gmail.com" required>
+                  <div class="owner-data__svg-email"></div>
                 </div>
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="phone-owner">Телефон:*</label>
-                  <input class="owner-data__input" type="tel" id="phone-owner" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                  <input class="owner-data__input owner-data__input-phone" type="tel" id="phone-owner" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                  <div class="owner-data__svg-phone"></div>
                 </div>
               </div>
             </div>
@@ -114,7 +118,7 @@
                   <h2 class="comment__title title">Комментарий</h2>
                 </div>
               </div>
-              <div class="form-cat__wrapper">
+              <div class="form-cat__wrapper wrapper">
                 <textarea class="comment-text" name="comment" cols="35" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </div>
@@ -125,9 +129,7 @@
                   <h2 class="additional-form__title title">Дополнительно</h2>
                 </div>
               </div>
-              <div class="form-cat__wrapper">
-
-
+              <div class="form-cat__wrapper wrapper">
               <ul class="additional-form__list list-none">
                 <li class="additional-form__item">
                   <label class="additional-form__control">
@@ -172,39 +174,36 @@
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Местоположение компании Cat Energy на карте.">
       </iframe>
-      <div class="footer__inner ">
-        <a class="header__logo-text" href="index.html">
+      <div class="footer__inner">
+        <a class="footer__link-logo-text" href="index.html">
           <span class="visually-hidden">На главную</span>
-          <img src="img/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
+          <img class="footer__logo-text" src="img/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
         </a>
         <div class="footer__social social">
           <ul class="social-list list-none">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
-                <img src="img/vkontakte.svg" width="28" height="22" alt="Vkontakte.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
-                <img src="img/youtube.svg" width="28" height="22" alt="Youtube.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-                <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer-copyright">
           <a class="footer-copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+          <div class="footer-copyright__svg"></div>
         </div>
       </div>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 </html>

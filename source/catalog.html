@@ -14,7 +14,7 @@
     <title>HTML Academy: Кэт энерджи/Каталог</title>
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--index">
       <div class="header-wrapper wrapper">
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
@@ -48,11 +48,11 @@
 
     <main class="main">
       <section class="catalog">
-        <div class="catalog__container  wrapper">
+        <div class="catalog__container wrapper">
           <h1 class="catalog__title title">Каталог продукции</h1>
           <ul class="catalog__list list-none">
             <li class="catalog__item">
-              <article class="catalog-cards product-card">
+              <article class="catalog__cards product-card">
                 <div class="product-card__wrapper">
                   <div class="product-card__wrapper-img">
                     <a class="product-card__link link" href="#">
@@ -83,12 +83,12 @@
                       <dd class="product-card__value">700 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog-cards product-card">
+              <article class="catalog__cards product-card">
                 <div class="product-card__wrapper">
                   <div class="product-card__wrapper-img">
                     <a class="product-card__link link" href="#">
@@ -119,12 +119,12 @@
                       <dd class="product-card__value">1000 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog-cards product-card">
+              <article class="catalog__cards product-card">
                 <div class="product-card__wrapper">
                   <div class="product-card__wrapper-img">
                     <a class="product-card__link link" href="#">
@@ -155,12 +155,12 @@
                       <dd class="product-card__value">700 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog-cards product-card">
+              <article class="catalog__cards product-card">
                 <div class="product-card__wrapper">
                   <div class="product-card__wrapper-img">
                     <a class="product-card__link link" href="#">
@@ -191,12 +191,12 @@
                       <dd class="product-card__value">1000 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog-cards product-card">
+              <article class="catalog__cards product-card">
                 <div class="product-card__wrapper">
                   <div class="product-card__wrapper-img">
                     <a class="product-card__link link" href="#">
@@ -227,12 +227,12 @@
                       <dd class="product-card__value">700 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
-              <article class="catalog-cards product-card">
+              <article class="catalog__cards product-card">
                 <div class="product-card__wrapper">
                   <div class="product-card__wrapper-img">
                     <a class="product-card__link link" href="#">
@@ -263,8 +263,8 @@
                       <dd class="product-card__value">1000 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
@@ -299,12 +299,11 @@
                       <dd class="product-card__value">700 ₽</dd>
                     </dl>
                   </div>
+                  <button class="product-card__button button" type="button">Заказать</button>
                 </div>
-                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
-
-            <li class="catalog__item">
+            <li class="catalog__item catalog-item--to-all">
               <article class="catalog-cards product-card product-card__to-all">
                 <div class="product-card__wrapper product-card__wrapper--to-all">
                   <div class="product-card__inner product-card__inner--to-all">
@@ -322,13 +321,13 @@
         </div>
       </section>
 
-      <section class="additional wrapper">
+      <section class="additional">
         <div class="additional__header">
           <div class="additioanal__wrapper">
             <h2 class="additional__title title">Дополнительные товары</h2>
           </div>
         </div>
-        <div class="additional__inner">
+        <div class="additional__inner wrapper">
           <ul class="additional__list list-none">
             <li class="additional__item">
               <div class="additional-box">
@@ -337,8 +336,8 @@
                   <dt class="attributes__additive">1 упаковка (100 г)</dt>
                   <dd class="attributes__price">200 ₽</dd>
                 </dl>
+                <button class="additional__button button" type="button">заказать</button>
               </div>
-              <button class="product-card__button button" type="button">заказать</button>
             </li>
             <li class="additional__item">
               <div class="additional-box">
@@ -347,8 +346,8 @@
                   <dt class="attributes__additive">5 литров</dt>
                   <dd class="attributes__price">50 ₽</dd>
                 </dl>
+                <button class="additional__button button" type="button">заказать</button>
               </div>
-              <button class="product-card__button button" type="button">заказать</button>
             </li>
             <li class="additional__item">
               <div class="additional-box">
@@ -357,8 +356,8 @@
                   <dt class="attributes__additive">1 литр</dt>
                   <dd class="attributes__price">100 ₽</dd>
                 </dl>
+                <button class="additional__button button" type="button">заказать</button>
               </div>
-              <button class="product-card__button button" type="button">заказать</button>
             </li>
             <li class="additional__item">
               <div class="additional-box">
@@ -367,22 +366,22 @@
                   <dt class="attributes__additive">1 упаковка (30 г)</dt>
                   <dd class="attributes__price">300 ₽</dd>
                 </dl>
+                <button class="additional__button button" type="button">заказать</button>
               </div>
-              <button class="product-card__button button" type="button">заказать</button>
             </li>
           </ul>
           <div class="addinational__offer offer">
-            <div class="offer__wrapper">
-              <div class="offer__inner">
-                <p class="offer__subtitle">Закажите все и получите чехол для кота в подарок!</p>
-              </div>
-            </div>
+              <span class="offer__icon"></span>
+              <p class="offer__subtitle">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
+      <div class="footer__wrapper">
+
+      </div>
       <div class="footer-location footer-location-catalog">
         <h2 class="footer-location__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <adress class="footer-location__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
@@ -393,38 +392,36 @@
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Местоположение компании Cat Energy на карте.">
       </iframe>
-      <div class="footer__inner ">
-        <a class="header__logo-text" href="index.html">
+      <div class="footer__inner">
+        <a class="footer__link-logo-text" href="index.html">
           <span class="visually-hidden">На главную</span>
-          <img src="img/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
+          <img class="footer__logo-text" src="img/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
         </a>
         <div class="footer__social social">
           <ul class="social-list list-none">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
-                <img src="img/vkontakte.svg" width="28" height="22" alt="Vkontakte.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
-                <img src="img/youtube.svg" width="28" height="22" alt="Youtube.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-                <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer-copyright">
           <a class="footer-copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+          <div class="footer-copyright__svg"></div>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

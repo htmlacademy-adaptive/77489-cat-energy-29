@@ -35,14 +35,14 @@
     width: 230px;
     height: 280px;
     padding: 0;
-    padding-top: 140px;
+    padding-top: 100px;
 
     &::after {
       position: absolute;
       right: 0;
       top: 0;
       font-size: 280px;
-      line-height: 280px;
+      line-height: 200px;
       color: $grey-200;
       z-index: -2;
       counter-increment: advantages-counter;

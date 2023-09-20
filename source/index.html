@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="img/site.webmanifest">
     <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#00a300">
     <meta name="theme-color" content="#ffffff">
@@ -60,7 +60,7 @@
               width="552" height="499">
             <source media="(min-width: 768px)" srcset="img/hero-product-tablet.png, img/hero-product-tablet @2x.png 2x"
               width="709" height="609">
-            <img class="hero__img" src="img/hero-product-mobile.png" width="280" height="270"
+            <img class="hero__product" src="img/hero-product-mobile.png" width="280" height="270"
               srcset="img/hero-product-mobile @2x.png 2x" alt="Коробка с продукциией со вкусом курицы.">
           </picture>
 
@@ -117,34 +117,34 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <div class="slider__before-wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/result-before-tablet.png" width="560" height="512"
-                  srcset="img/result-before-tablet @2x.png 2x">
-                <img class="slider__before" src="img/result-before-mobile.png" width="280" height="256"
-                  srcset="img/result-before-mobile @2x.png 2x" alt="Толстый кот Борис до начала программы Cat Energy Slim.">
-              </picture>
-            </div>
             <div class="slider__after-wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/result-after-tablet.png" width="560" height="512"
                   srcset="img/result-after-tablet @2x.png 2x">
-                <img class="slider__after" src="img/result-after-mobile.png" width="280" height="256"
+                <img class="slider__img-after" src="img/result-after-mobile.png" width="280" height="256"
                   srcset="img/after-mobile @2x.png 2x" alt="Стройный кот Борис после двух месяцев приема корма Cat energy.">
               </picture>
             </div>
-            <button class="range-bar">
-              <span class="visually-hidden">до/после</span>
-            </button>
+            <div class="slider__before-wrapper"  style="width: 50%;">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/result-before-tablet.png" width="560" height="512"
+                  srcset="img/result-before-tablet @2x.png 2x">
+                <img class="slider__img-before" src="img/result-before-mobile.png" width="280" height="256"
+                  srcset="img/result-before-mobile @2x.png 2x" alt="Толстый кот Борис до начала программы Cat Energy Slim.">
+              </picture>
+            </div>
+            <div class="slider__range-bar">
+              <button class="slider__button">
+                <span class="visually-hidden">до/после</span>
+              </button>
+              <div class="slider__line"></div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="wrapper">
-
-      </div>
       <div class="footer-location">
         <h2 class="footer-location__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
           <adress class="footer-location__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
@@ -156,35 +156,32 @@
         title="Местоположение компании Cat Energy на карте.">
       </iframe>
       <div class="footer__inner">
-        <a class="header__logo-text" href="index.html">
+        <a class="footer__link-logo-text" href="index.html">
           <span class="visually-hidden">На главную</span>
-          <img src="img/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
+          <img class="footer__logo-text" src="img/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy.">
         </a>
         <div class="footer__social social">
           <ul class="social-list list-none">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
-                <img src="img/vkontakte.svg" width="28" height="22" alt="Vkontakte.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
-                <img src="img/youtube.svg" width="28" height="22" alt="Youtube.">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-                <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
               </a>
             </li>
           </ul>
         </div>
         <div class="footer-copyright">
           <a class="footer-copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+          <div class="footer-copyright__svg"></div>
         </div>
       </div>
     </footer>

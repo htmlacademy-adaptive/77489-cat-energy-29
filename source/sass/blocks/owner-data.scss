@@ -1,0 +1,135 @@
+.owner-data {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.owner-data__title {
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 26px;
+  background: $default-white;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 30px;
+    margin-bottom: 76px;
+  }
+}
+
+.owner-data__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.owner-data__box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.owner-data__control {
+  font-family: $font-secondary;
+  color: $color-font;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.owner-data__input {
+  position: relative;
+  font-family: $font-secondary;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 14px 15px;
+  border: 1px solid $grey-300;
+
+  &:hover {
+    border-color: $grey-700;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.owner-data__input::placeholder {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.owner-data__svg-email {
+  position: absolute;
+  right: 20px;
+  content: "";
+  mask-image: url("../img/sprite.svg#icon-email");
+  background-color: $black-200;
+  width: 20px;
+  height: 20px;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.owner-data__svg-phone {
+  position: absolute;
+  right: 20px;
+  content: "";
+  mask-image: url("../img/sprite.svg#icon-phone");
+  background-color: $black-200;
+  width: 20px;
+  height: 20px;
+
+  &:hover {
+    background-color: $green-300;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.owner-data__input--error {
+  border: 1px solid $color-error;
+
+  &:hover {
+    border-color: $color-error;
+  }
+}
+
+.owner-data__svg--error {
+  background-color: $color-error;
+
+  &:hover {
+    border-color: $color-error;
+  }
+}
