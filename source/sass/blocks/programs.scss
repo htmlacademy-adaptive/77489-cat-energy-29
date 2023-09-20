@@ -15,7 +15,7 @@
   position: relative;
   background-color: $grey-200;
   margin-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 21px;
   padding-left: 20px;
   padding-bottom: 18px;
   padding-right: 20px;
@@ -25,12 +25,13 @@
     margin-bottom: 30px;
     padding-top: 77px;
     padding-left: 52px;
-    padding-bottom: 55px;
-    padding-right: 60px;
+    padding-bottom: 53px;
+    padding-right: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    padding-top: 41px;
   }
 }
 
@@ -39,12 +40,18 @@
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 90px;
-  margin-bottom: 30px;
+  margin-top: 9px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+    margin-bottom: 73px;
   }
 }
 
@@ -54,62 +61,65 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 340px;
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
   }
 }
 
 .programs-weight--slim::before {
-  position: absolute;
   content: "";
   display: block;
-  top: 21px;
-  left: 27px;
-  background-image: url("../img/slim.svg");
-  background-repeat: no-repeat;
+  float: left;
   width: 50px;
   height: 53px;
+  background-image: url("../img/slim.svg");
+  background-repeat: no-repeat;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 140px;
-    height: 194px;
-    top: 81px;
-    left: auto;
-    right: 93px;
+    width: 200px;
+    height: 211px;
+    float: right;
+    margin: 0;
+    background-size: 200px 211px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 97px;
-    top: 65px;
-    left: 60px;
-    right: auto;
+    float: left;
+    width: 100px;
+    height: 106px;
+    background-size: 100px 106px;
+    margin-right: 62px;
   }
 }
 
 .programs-weight--pro::before {
-  position: absolute;
   content: "";
   display: block;
-  top: 21px;
-  left: 27px;
-  background-image: url("../img/pro.svg");
-  background-repeat: no-repeat;
+  float: left;
   width: 67px;
   height: 50px;
+  background-image: url("../img/pro.svg");
+  background-repeat: no-repeat;
+  margin-right: 11px;
 
   @media (min-width: $tablet-width) {
-    width: 140px;
-    height: 194px;
-    top: 81px;
-    left: auto;
-    right: 93px;
+    width: 268px;
+    height: 200px;
+    float: right;
+    margin-right: -23px;
+    background-size: 268px 200px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 70px;
-    height: 97px;
-    top: 70px;
-    left: 50px;
-    right: auto;
+    float: left;
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
+    margin-right: 47px;
   }
 }
 
