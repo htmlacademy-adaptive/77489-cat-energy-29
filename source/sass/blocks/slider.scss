@@ -24,11 +24,11 @@
   background-color: $grey-100;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $grey-100 57%, $default-white 57%);
+    background: linear-gradient(to top, $grey-100 294px, $default-white 294px);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to top, $grey-100 69%, $default-white 69%);
+    background: linear-gradient(to top, $grey-100 351px, $default-white 351px);
   }
 }
 .slider__after-wrapper {
