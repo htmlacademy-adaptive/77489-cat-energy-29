@@ -137,6 +137,7 @@
 .footer-copyright__link {
   font-size: 16px;
   line-height: 20px;
+  width: max-content;
   color: $color-font;
 
   &:active {
@@ -193,10 +194,6 @@
   &:active {
     opacity: 30%;
   }
-}
-
-.footer-copyright__link {
-  width: max-content;
 }
 
 .footer-copyright__svg {
