@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
-  height: 512px;
+    height: 512px;
   }
 }
 
@@ -31,6 +31,7 @@
     background: linear-gradient(to top, $grey-100 351px, $default-white 351px);
   }
 }
+
 .slider__after-wrapper {
   z-index: 1;
 }
@@ -42,7 +43,7 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
-  height: 512px;
+    height: 512px;
   }
 }
 
