@@ -117,25 +117,28 @@
             </div>
           </div>
           <div class="example__slider slider">
-            <div class="slider__before-wrapper">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/result-before-tablet.png" width="560" height="512"
-                  srcset="img/result-before-tablet @2x.png 2x">
-                <img class="slider__before" src="img/result-before-mobile.png" width="280" height="256"
-                  srcset="img/result-before-mobile @2x.png 2x" alt="Толстый кот Борис до начала программы Cat Energy Slim.">
-              </picture>
-            </div>
             <div class="slider__after-wrapper">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/result-after-tablet.png" width="560" height="512"
                   srcset="img/result-after-tablet @2x.png 2x">
-                <img class="slider__after" src="img/result-after-mobile.png" width="280" height="256"
+                <img class="slider__img-after" src="img/result-after-mobile.png" width="280" height="256"
                   srcset="img/after-mobile @2x.png 2x" alt="Стройный кот Борис после двух месяцев приема корма Cat energy.">
               </picture>
             </div>
-            <button class="range-bar">
-              <span class="visually-hidden">до/после</span>
-            </button>
+            <div class="slider__before-wrapper"  style="width: 50%;">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/result-before-tablet.png" width="560" height="512"
+                  srcset="img/result-before-tablet @2x.png 2x">
+                <img class="slider__img-before" src="img/result-before-mobile.png" width="280" height="256"
+                  srcset="img/result-before-mobile @2x.png 2x" alt="Толстый кот Борис до начала программы Cat Energy Slim.">
+              </picture>
+            </div>
+            <div class="slider__range-bar">
+              <button class="slider__button">
+                <span class="visually-hidden">до/после</span>
+              </button>
+              <div class="slider__line"></div>
+            </div>
           </div>
         </div>
       </section>

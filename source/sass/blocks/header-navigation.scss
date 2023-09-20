@@ -15,14 +15,20 @@
 }
 
 .header-navigation__list {
-  top: 65px;
+  position: absolute;
+  background-color: $default-white;
+  top: 35px;
+  left: 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    top: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
     gap: 33px;
+    background: none;
   }
 }
 
