@@ -15,12 +15,17 @@
 }
 
 .additioanal__wrapper {
-  max-width: 1200px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    max-width: 768px;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 70px;
   }
 }
 
@@ -43,7 +48,6 @@
   line-height: 24px;
   background-color: $default-white;
   padding: 0 20px;
-  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -58,7 +62,6 @@
     justify-content: space-between;
   }
 }
-
 
 .additional__list {
   margin-bottom: 36px;
@@ -76,7 +79,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    border: 2px solid $grey-900;
+    border: 1px solid $grey-900;
     padding: 28px 38px;
   }
 
