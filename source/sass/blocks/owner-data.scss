@@ -82,23 +82,23 @@
   }
 }
 
-.owner-data__svg-email {
-  position: absolute;
-  right: 20px;
-  content: "";
-  mask-image: url("../img/sprite.svg#icon-email");
-  background-color: $black-200;
-  width: 20px;
-  height: 20px;
+// .owner-data__svg-email {
+//   position: absolute;
+//   right: 20px;
+//   content: "";
+//   mask-image: url("../img/sprite.svg#icon-email");
+//   background-color: $black-200;
+//   width: 20px;
+//   height: 20px;
 
-  &:hover {
-    background-color: $green-300;
-  }
+//   &:hover {
+//     background-color: $green-300;
+//   }
 
-  &:active {
-    opacity: 30%;
-  }
-}
+//   &:active {
+//     opacity: 30%;
+//   }
+// }
 
 .owner-data__svg-phone {
   position: absolute;

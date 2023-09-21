@@ -56,6 +56,14 @@ p {
   text-align: center;
   text-transform: uppercase;
   border: none;
+
+  &:hover {
+    background-color: $green-200;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .link {
