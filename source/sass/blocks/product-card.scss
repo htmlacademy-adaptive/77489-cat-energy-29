@@ -124,12 +124,12 @@
   text-align: center;
 }
 
-.button__to-all {
+.product-card__button--to-all {
   color: $color-font;
   background-color: $grey-200;
 }
 
-.to-all__picture {
+.product-card__picture {
   display: block;
   background-image: url("../img/plus.svg");
   width: 30px;

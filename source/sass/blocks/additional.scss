@@ -14,7 +14,7 @@
   }
 }
 
-.additioanal__wrapper {
+.additioanal-header__wrapper {
   max-width: 320px;
   margin: 0 auto;
 
@@ -136,7 +136,11 @@
   }
 }
 
-.addinational__offer {
+.addinational-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   min-width: 280px;
   height: 290px;
   background-color: rgba(104, 183, 56, 1);
@@ -146,10 +150,17 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
     height: 200px;
     background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
       url("../img/offer-background-tablet.jpg");
     background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
 
@@ -171,5 +182,31 @@
 
   @media (min-width: $desktop-width) {
     min-width: 280px;
+  }
+}
+
+.addinational-offer__icon {
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon-offer.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    margin: 0;
+  }
+}
+
+.addinational-offer__subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  color: $default-white;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    margin: 0;
   }
 }
