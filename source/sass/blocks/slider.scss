@@ -65,10 +65,11 @@
   z-index: 2;
   width: 40px;
   height: 40px;
-  background-color: $bg-grey;
-  background-image: url("../img/slider-button.svg");
+  background-image: url("../img/slider-button.svg#slider");
+  // background-color: $bg-grey;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover,
   &:focus {
