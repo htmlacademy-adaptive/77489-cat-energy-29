@@ -80,11 +80,18 @@
   margin: 0 auto;
   margin-bottom: 3px;
 
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-35%, -50%);
+    width: 552px;
+    height: 499px;
   }
 }
 
