@@ -28,13 +28,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
 
 .additional-form__control {
   display: flex;
@@ -62,6 +58,8 @@
   height: 40px;
   margin: 0;
   margin-right: 15px;
+  flex-shrink: 0;
+  align-self: flex-start;
   cursor: pointer;
 
   &:hover {
@@ -94,8 +92,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 80px;
-    gap: 200px;
+    gap: 0;
   }
 }
 

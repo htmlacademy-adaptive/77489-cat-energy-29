@@ -1,0 +1,19 @@
+.button {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 10px;
+  background-color: $green-300;
+  color: $default-white;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: $green-200;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
