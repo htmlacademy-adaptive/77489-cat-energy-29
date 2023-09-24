@@ -199,13 +199,12 @@
 
 .footer-copyright__svg {
   content: "";
-  mask-image: url("../img/sprite.svg#logo-htmlacademy");
-  background-color: $bg-grey;
   width: 27px;
   height: 34px;
 
   &:hover {
-    background-color: $green-300;
+    stroke: $green-300;
+    fill: $green-300;
   }
 
   &:active {

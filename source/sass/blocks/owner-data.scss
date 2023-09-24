@@ -82,65 +82,21 @@
   }
 }
 
-.owner-data__input:hover ~ .owner-data__icon {
-  stroke: red;
-  fill: red;
-}
-
 .owner-data__icon {
   position: absolute;
   right: 20px;
   content: "";
   width: 20px;
   height: 20px;
-
-
-
-  &:hover {
-    stroke: red;
-    fill: red;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
+  pointer-events: none;
 }
 
-// .owner-data__svg-email {
-//   position: absolute;
-//   right: 20px;
-//   content: "";
-//   mask-image: url("../img/sprite.svg#icon-email");
-//   background-color: $black-200;
-//   width: 20px;
-//   height: 20px;
-
-//   &:hover {
-//     background-color: $green-300;
-//   }
-
-//   &:active {
-//     opacity: 30%;
-//   }
-// }
-
-// .owner-data__svg-phone {
-//   position: absolute;
-//   right: 20px;
-//   content: "";
-//   mask-image: url("../img/sprite.svg#icon-phone");
-//   background-color: $black-200;
-//   width: 20px;
-//   height: 20px;
-
-//   &:hover {
-//     background-color: $green-300;
-//   }
-
-//   &:active {
-//     opacity: 30%;
-//   }
-// }
+.owner-data__input:hover ~ .owner-data__icon,
+.owner-data__input:focus ~ .owner-data__icon {
+  .owner-data__icon-svg {
+    color: $green-300;
+  }
+}
 
 .owner-data__input--error {
   border: 1px solid $color-error;
@@ -150,10 +106,9 @@
   }
 }
 
-.owner-data__svg--error {
-  background-color: $color-error;
-
-  &:hover {
-    border-color: $color-error;
+.owner-data__input--error ~ .owner-data__icon {
+  .owner-data__icon-svg {
+    color: $color-error;
   }
 }
+

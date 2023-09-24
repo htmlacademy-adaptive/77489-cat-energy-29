@@ -101,7 +101,7 @@
               <div class="form-cat__wrapper owner-data__inner wrapper">
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="e-mail-owner">E-mail:*</label>
-                  <!-- чтобы подключить стили ошибки использовать класс owner-data__input--error для input и owner-data__svg--error для div-->
+                  <!-- чтобы подключить стили ошибки использовать класс owner-data__input--error для input -->
                   <input class="owner-data__input owner-data__input-email" type="email" id="e-mail-owner" name="e-mail" placeholder="kuklachev@gmail.com" required>
                   <div class="owner-data__icon">
                     <svg class="owner-data__icon-svg" width="20" height="20" aria-label="Ввести почту" focusable="false">
@@ -208,7 +208,10 @@
         </div>
         <div class="footer-copyright">
           <a class="footer-copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <div class="footer-copyright__svg"></div>
+
+          <svg class="footer-copyright__svg" width="20" height="20" aria-label="Ввести почту" focusable="false">
+            <use href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
         </div>
       </div>
     </footer>
