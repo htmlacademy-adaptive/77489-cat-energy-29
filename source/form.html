@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
@@ -14,7 +16,7 @@
     <title>HTML Academy: Кэт энерджи/</title>
   </head>
   <body class="page__body">
-    <header class="header header--form header--index">
+    <header class="header">
       <div class="header-wrapper wrapper">
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
@@ -208,10 +210,7 @@
         </div>
         <div class="footer-copyright">
           <a class="footer-copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-
-          <svg class="footer-copyright__svg" width="20" height="20" aria-label="Ввести почту" focusable="false">
-            <use href="img/sprite.svg#logo-htmlacademy"></use>
-          </svg>
+          <div class="footer-copyright__svg"></div>
         </div>
       </div>
     </footer>
