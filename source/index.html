@@ -121,6 +121,8 @@
           <div class="example__slider slider">
             <div class="slider__after-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/result-after-tablet.webp 1x, img/result-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/result-after-mobile.webp 1x, img/result-after-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/result-after-tablet.png, img/result-after-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__img-after" src="img/result-after-mobile.png" width="280" height="256"
                   srcset="img/after-mobile@2x.png 2x" alt="Стройный кот Борис после двух месяцев приема корма Cat energy.">
@@ -155,6 +157,9 @@
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Местоположение компании Cat Energy на карте.">
       </iframe>
+      <noscript>
+        <img class="footer-location__map" src="../img/location-mobile.png" width="320px" height="362px" alt="Схема проезда">
+      </noscript>
       <div class="footer__inner">
         <a class="footer__link-logo-text" href="index.html">
           <span class="visually-hidden">На главную</span>

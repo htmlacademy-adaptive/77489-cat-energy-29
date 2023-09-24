@@ -87,6 +87,17 @@
   }
 }
 
+.footer-location__map {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
 .footer__logo-text {
   display: block;
   mask-image: url("../img/sprite2.svg#logo-text");
