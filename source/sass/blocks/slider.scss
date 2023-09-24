@@ -73,9 +73,10 @@
 
   &:hover,
   &:focus {
-    background-color: $green-300;
+    background-image: url("../img/slider-hover.svg");
   }
 }
+
 
 .slider__line {
   position: absolute;
