@@ -65,16 +65,18 @@
   z-index: 2;
   width: 40px;
   height: 40px;
+  background-image: url("../img/slider.svg#slider");
   background-color: $bg-grey;
-  background-image: url("../img/slider-button.svg");
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: $green-300;
+    background-image: url("../img/slider-hover.svg#slider-hover");
   }
 }
+
 
 .slider__line {
   position: absolute;

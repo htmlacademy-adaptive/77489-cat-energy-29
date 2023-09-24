@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -56,12 +58,12 @@
           <p class="hero__subtitle title">Занялся собой? Займись котом!</p>
 
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/hero-product-desktop.png, img/hero-desktop @2x.png 2x"
-              width="552" height="499">
-            <source media="(min-width: 768px)" srcset="img/hero-product-tablet.png, img/hero-product-tablet @2x.png 2x"
-              width="709" height="609">
-            <img class="hero__product" src="img/hero-product-mobile.png" width="280" height="270"
-              srcset="img/hero-product-mobile @2x.png 2x" alt="Коробка с продукциией со вкусом курицы.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-product-desktop.webp 1x, img/hero-product-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-product-tablet.webp 1x, img/hero-product-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/hero-product-mobile.webp 1x, img/hero-product-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/hero-product-desktop.png, img/hero-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/hero-product-tablet.png, img/hero-product-tablet@2x.png 2x">
+            <img class="hero__product" src="img/hero-product-mobile.png" width="280" height="270" srcset="img/hero-product-mobile@2x.png 2x" alt="Коробка с продукцией со вкусом курицы.">
           </picture>
 
           <a class="hero__button button link" href="form.html">Подобрать программу</a>
@@ -71,16 +73,16 @@
       <section class="programs wrapper">
           <h2 class="visually-hidden">Программы изменения веса котов</h2>
           <ul class="programs__list list-none">
-            <article class="programs-weight programs-weight--slim">
+            <li class="programs-weight programs-weight--slim">
               <h3 class="programs-weight__title title">Похудение</h3>
               <p class="programs-weight__decription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="programs-weight__link link title" href="catalog.html">Каталог slim</a>
-            </article>
-            <article class="programs-weight programs-weight--pro">
+            </li>
+            <li class="programs-weight programs-weight--pro">
               <h3 class="programs-weight__title title">Набор массы</h3>
               <p class="programs-weight__decription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="programs-weight__link link" href="catalog.html">Каталог pro</a>
-            </article>
+          </li>
           </ul>
       </section>
 
@@ -119,18 +121,18 @@
           <div class="example__slider slider">
             <div class="slider__after-wrapper">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/result-after-tablet.png" width="560" height="512"
-                  srcset="img/result-after-tablet @2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/result-after-tablet.webp 1x, img/result-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/result-after-mobile.webp 1x, img/result-after-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/result-after-tablet.png, img/result-after-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__img-after" src="img/result-after-mobile.png" width="280" height="256"
-                  srcset="img/after-mobile @2x.png 2x" alt="Стройный кот Борис после двух месяцев приема корма Cat energy.">
+                  srcset="img/after-mobile@2x.png 2x" alt="Стройный кот Борис после двух месяцев приема корма Cat energy.">
               </picture>
             </div>
             <div class="slider__before-wrapper"  style="width: 50%;">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/result-before-tablet.png" width="560" height="512"
-                  srcset="img/result-before-tablet @2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/result-before-tablet.png, img/result-before-tablet@2x.png 2x" width="560" height="512">
                 <img class="slider__img-before" src="img/result-before-mobile.png" width="280" height="256"
-                  srcset="img/result-before-mobile @2x.png 2x" alt="Толстый кот Борис до начала программы Cat Energy Slim.">
+                  srcset="img/result-before-mobile@2x.png 2x" alt="Толстый кот Борис до начала программы Cat Energy Slim.">
               </picture>
             </div>
             <div class="slider__range-bar">
@@ -147,7 +149,7 @@
     <footer class="footer">
       <div class="footer-location">
         <h2 class="footer-location__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-          <adress class="footer-location__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
+          <address class="footer-location__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198189!2d30.320472477345316!3d59.938719162093555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694027143706!5m2!1sru!2sru"
         width="320"
@@ -155,6 +157,9 @@
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         title="Местоположение компании Cat Energy на карте.">
       </iframe>
+      <noscript>
+        <img class="footer-location__map" src="../img/location-mobile.png" width="320px" height="362px" alt="Схема проезда">
+      </noscript>
       <div class="footer__inner">
         <a class="footer__link-logo-text" href="index.html">
           <span class="visually-hidden">На главную</span>

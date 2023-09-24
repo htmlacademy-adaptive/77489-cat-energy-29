@@ -28,18 +28,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
 
 .additional-form__control {
   display: flex;
   align-items: center;
+  font-family: $font-secondary;
   color: $color-font;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -60,6 +58,8 @@
   height: 40px;
   margin: 0;
   margin-right: 15px;
+  flex-shrink: 0;
+  align-self: flex-start;
   cursor: pointer;
 
   &:hover {
@@ -85,16 +85,17 @@
   margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
     align-items: center;
-    gap: 60px;
     margin-bottom: 60px;
+    gap: 80px;
   }
 
-  @media (min-width: $tablet-width) {
-    gap: 80px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 80px;
+    gap: 0;
   }
 }
 
@@ -103,5 +104,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+  }
+}
+
+.additional-form__button {
+  width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }

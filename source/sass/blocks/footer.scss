@@ -77,7 +77,8 @@
   }
 }
 
-.footer-location__adress {
+.footer-location__address {
+  font-style: normal;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
@@ -86,10 +87,20 @@
   }
 }
 
+.footer-location__map {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
 .footer__logo-text {
   display: block;
-  content: "";
-  mask-image: url("../img/sprite.svg#logo-text");
+  mask-image: url("../img/sprite2.svg#logo-text");
   width: 118px;
   height: 21px;
 
@@ -147,8 +158,7 @@
 
 .social__link--vk {
   display: block;
-  content: "";
-  mask-image: url("../img/sprite.svg#vk");
+  mask-image: url("../img/sprite2.svg#vk");
   background-color: $bg-grey;
   width: 28px;
   height: 22px;
@@ -164,8 +174,7 @@
 
 .social__link--youtube {
   display: block;
-  content: "";
-  mask-image: url("../img/sprite.svg#youtube");
+  mask-image: url("../img/sprite2.svg#youtube");
   background-color: $bg-grey;
   width: 28px;
   height: 22px;
@@ -181,8 +190,7 @@
 
 .social__link--telegram {
   display: block;
-  content: "";
-  mask-image: url("../img/sprite.svg#telegram");
+  mask-image: url("../img/sprite2.svg#telegram");
   background-color: $bg-grey;
   width: 28px;
   height: 22px;
@@ -197,8 +205,7 @@
 }
 
 .footer-copyright__svg {
-  content: "";
-  mask-image: url("../img/sprite.svg#logo-htmlacademy");
+  mask-image: url("../img/sprite2.svg#logo-htmlacademy");
   background-color: $bg-grey;
   width: 27px;
   height: 34px;

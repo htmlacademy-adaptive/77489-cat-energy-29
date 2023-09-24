@@ -122,9 +122,11 @@
   font-family: $font-secondary;
   font-size: 20px;
   line-height: 20px;
-  padding: 10px;
+  padding: 23px;
+  text-align: center;
   color: $default-black;
   text-transform: uppercase;
+  border-top: 1px solid $grey-600;
   border-bottom: 1px solid $grey-600;
 
   &:hover {

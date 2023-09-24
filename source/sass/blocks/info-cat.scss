@@ -39,7 +39,8 @@
   padding-right: 15px;
   border: 1px solid $grey-300;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $grey-700;
   }
 

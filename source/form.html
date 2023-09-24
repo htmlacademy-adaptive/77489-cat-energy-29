@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -14,7 +16,7 @@
     <title>HTML Academy: Кэт энерджи/</title>
   </head>
   <body class="page__body">
-    <header class="header header--index">
+    <header class="header">
       <div class="header-wrapper wrapper">
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
@@ -35,7 +37,7 @@
                 <a class="header-navigation__link link" href="index.html">Главная</a>
               </li>
               <li class="header-navigation__item">
-                <a class="header-navigation__link link" href="form.html">Каталог продукции</a>
+                <a class="header-navigation__link link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="header-navigation__item header-navigation__item--active">
                 <a class="header-navigation__link link">Подбор программы</a>
@@ -48,11 +50,13 @@
 
     <main class="main-form">
       <section class="form-cat">
-        <div class="form-cat__wrapper wrapper">
-          <h1 class="form-cat__title title">Подбор программы</h1>
-          <p class="form-cat__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+        <div class="form-cat__wrapper">
+          <div class="wrapper">
+            <h1 class="form-cat__title title">Подбор программы</h1>
+            <p class="form-cat__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+          </div>
           <form class="form-cat__data " action="https://echo.htmlacademy.ru/" method="get">
-            <div class="form-cat__inner">
+            <div class="form-cat__inner wrapper">
               <div class="form-cat__info info-cat">
                 <div class="info-cat__item">
                   <label class="info-cat__control" for="cat_name">Имя:*</label>
@@ -89,10 +93,9 @@
                 </ul>
               </div>
             </div>
-        </div>
 
-            <div class="form-cat__info line owner-data">
-              <div class="line__header">
+            <div class="form-cat__info owner-data">
+              <div class="line">
                 <div class="line__wrapper">
                   <h2 class="owner-data__title title">Контактные данные (владельца кота)</h2>
                 </div>
@@ -100,20 +103,27 @@
               <div class="form-cat__wrapper owner-data__inner wrapper">
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="e-mail-owner">E-mail:*</label>
-                  <!-- чтобы подключить стили ошибки использовать класс owner-data__input--error для input и owner-data__svg--error для div-->
+                  <!-- чтобы подключить стили ошибки использовать класс owner-data__input--error для input -->
                   <input class="owner-data__input owner-data__input-email" type="email" id="e-mail-owner" name="e-mail" placeholder="kuklachev@gmail.com" required>
-                  <div class="owner-data__svg-email"></div>
+                  <div class="owner-data__icon">
+                    <svg class="owner-data__icon-svg" width="20" height="20" aria-label="Ввести почту" focusable="false">
+                      <use href="img/sprite.svg#icon-email"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="owner-data__box">
                   <label class="owner-data__control" for="phone-owner">Телефон:*</label>
                   <input class="owner-data__input owner-data__input-phone" type="tel" id="phone-owner" name="phone-number" placeholder="8 (960) 900-60-90" required>
-                  <div class="owner-data__svg-phone"></div>
+                  <div class="owner-data__icon">
+                    <svg class="owner-data__icon-svg" width="20" height="20" aria-label="Ввести телефон" focusable="false">
+                      <use href="img/sprite.svg#icon-phone"></use>
+                    </svg>
                 </div>
               </div>
             </div>
 
             <div class="form-cat__info comment">
-              <div class="line__header">
+              <div class="line">
                 <div class="line__wrapper">
                   <h2 class="comment__title title">Комментарий</h2>
                 </div>
@@ -124,49 +134,49 @@
             </div>
 
             <div class="form-cat__info additional-form">
-              <div class="line__header">
+              <div class="line">
                 <div class="line__wrapper">
                   <h2 class="additional-form__title title">Дополнительно</h2>
                 </div>
               </div>
               <div class="form-cat__wrapper wrapper">
-              <ul class="additional-form__list list-none">
-                <li class="additional-form__item">
-                  <label class="additional-form__control">
-                    <input class="additional-form__input" type="checkbox" name="additional-form" value="sweetener" checked>Сахарозаменитель
-                  </label>
-                </li>
-                <li class="additional-form__item">
-                  <label class="additional-form__control">
-                    <input class="additional-form__input" type="checkbox" name="additional-form" value="watter">Питьевая вода
-                  </label>
-                </li>
-                <li class="additional-form__item">
-                  <label class="additional-form__control">
-                    <input class="additional-form__input" type="checkbox" name="additional-form" value="milk">Молоко
-                  </label>
-                </li>
-                <li class="additional-form__item">
-                  <label class="additional-form__control">
-                    <input class="additional-form__input" type="checkbox" name="additional-form" value="vitamins"><span>Витамины</span>
-                  </label>
-                </li>
-              </ul>
-
-            <div class="additional-form__button-box">
-              <button class="additional-form__button button" type="submit">Отправить заявку</button>
-              <p class="additional-form__sign">* — Обязательные поля</p>
+                <ul class="additional-form__list list-none">
+                  <li class="additional-form__item">
+                    <label class="additional-form__control">
+                      <input class="additional-form__input" type="checkbox" name="additional-form" value="sweetener" checked>Сахарозаменитель
+                    </label>
+                  </li>
+                  <li class="additional-form__item">
+                    <label class="additional-form__control">
+                      <input class="additional-form__input" type="checkbox" name="additional-form" value="watter">Питьевая вода
+                    </label>
+                  </li>
+                  <li class="additional-form__item">
+                    <label class="additional-form__control">
+                      <input class="additional-form__input" type="checkbox" name="additional-form" value="milk">Молоко
+                    </label>
+                  </li>
+                  <li class="additional-form__item">
+                    <label class="additional-form__control">
+                      <input class="additional-form__input" type="checkbox" name="additional-form" value="vitamins"><span>Витамины</span>
+                    </label>
+                  </li>
+                </ul>
+                <div class="additional-form__button-box">
+                  <button class="additional-form__button button" type="submit">Отправить заявку</button>
+                  <p class="additional-form__sign">* — Обязательные поля</p>
+                </div>
+              </div>
             </div>
-          </div>
-          </div>
           </form>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer-location footer-location-catalog">
         <h2 class="footer-location__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-          <adress class="footer-location__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
+          <address class="footer-location__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198189!2d30.320472477345316!3d59.938719162093555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694027143706!5m2!1sru!2sru"
         width="320"

@@ -1,24 +1,5 @@
-.header-form {
-  border-bottom: 1px solid $grey-900;
-}
-
 .form-cat {
   color: $default-black;
-}
-
-.form-cat__wrapper {
-  padding: 0 20px;
-  margin-bottom: 24px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 70px;
-    margin-bottom: 65px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-    margin-bottom: 70px;
-  }
 }
 
 .form-cat__title {
@@ -30,6 +11,12 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
+  }
+}
+
+.form-cat__info .title {
+  @media (max-width: $mobile-width-only) {
+    max-width: 280px;
   }
 }
 
@@ -50,6 +37,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    margin-bottom: 70px;
   }
 }
 
@@ -62,7 +50,6 @@
 .line__wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -73,11 +60,11 @@
   }
 }
 
-.line__header {
+.line {
   position: relative;
 }
 
-.line__header::before {
+.line::before {
   position: absolute;
   content: "";
   top: 50%;

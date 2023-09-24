@@ -9,6 +9,7 @@
 
 .catalog__title {
   line-height: 36px;
+  margin-top: 27px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -34,20 +35,14 @@
   }
 }
 
+.catalog__item--to-all {
+  border-bottom: 1px solid $grey-900;
+}
+
 .catalog__item {
   border-top: 1px solid $grey-900;
 
   @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
-.catalog__item--to-all {
-  border-bottom: 1px solid $grey-900;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: end;
     border: none;
   }
 }

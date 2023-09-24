@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -14,7 +16,7 @@
     <title>HTML Academy: Кэт энерджи/Каталог</title>
   </head>
   <body class="page__body">
-    <header class="header header--index">
+    <header class="header">
       <div class="header-wrapper wrapper">
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
@@ -53,267 +55,253 @@
           <ul class="catalog__list list-none">
             <li class="catalog__item">
               <article class="catalog__cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/chicken-500-tablet.png, img/catalog/chicken-500-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/chicken-500-mobile.png" width="140" height="107"
-                          srcset="img/catalog/chicken-500-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 500 г со вкусом курицы.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">500 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Курица</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">700 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/chicken-500-tablet.png, img/catalog/chicken-500-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/chicken-500-mobile.png" width="140" height="107"
+                        srcset="img/catalog/chicken-500-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 500 г со вкусом курицы.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">500 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Курица</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">700 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
               <article class="catalog__cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/chicken-1000-tablet.png, img/catalog/chicken-1000-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/chicken-1000-mobile.png" width="140" height="107"
-                          srcset="img/catalog/chicken-1000-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 1000 г со вкусом курицы.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 1000 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">1000 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Курица</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">1000 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/chicken-1000-tablet.png, img/catalog/chicken-1000-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/chicken-1000-mobile.png" width="140" height="107"
+                        srcset="img/catalog/chicken-1000-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 1000 г со вкусом курицы.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 1000 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">1000 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Курица</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">1000 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
               <article class="catalog__cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/fish-500-tablet.png, img/catalog/fish-500-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/fish-500-mobile.png" width="140" height="107"
-                          srcset="img/catalog/fish-500-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 500 г со вкусом рыбы.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">500 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Рыба</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">700 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/fish-500-tablet.png, img/catalog/fish-500-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/fish-500-mobile.png" width="140" height="107"
+                        srcset="img/catalog/fish-500-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 500 г со вкусом рыбы.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">500 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Рыба</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">700 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
               <article class="catalog__cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/fish-1000-tablet.png, img/catalog/fish-1000-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/fish-1000-mobile.png" width="140" height="107"
-                          srcset="img/catalog/fish-1000-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 500 г со вкусом рыбы.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 1000 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">1000 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Рыба</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">1000 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/fish-1000-tablet.png, img/catalog/fish-1000-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/fish-1000-mobile.png" width="140" height="107"
+                        srcset="img/catalog/fish-1000-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 500 г со вкусом рыбы.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 1000 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">1000 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Рыба</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">1000 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
               <article class="catalog__cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/buckwheat-500-tablet.png, img/catalog/buckwheat-500-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/buckwheat-500-mobile.png" width="140" height="107"
-                          srcset="img/catalog/buckwheat-500-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 500 г со вкусом гречки.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">500 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Гречка</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">700 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/buckwheat-500-tablet.png, img/catalog/buckwheat-500-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/buckwheat-500-mobile.png" width="140" height="107"
+                        srcset="img/catalog/buckwheat-500-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 500 г со вкусом гречки.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">500 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Гречка</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">700 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
               <article class="catalog__cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/buckwheat-1000-tablet.png, img/catalog/buckwheat-1000-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/buckwheat-1000-mobile.png" width="140" height="107"
-                          srcset="img/catalog/buckwheat-1000-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 500 г со вкусом гречки.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 1000 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">500 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Гречка</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">1000 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/buckwheat-1000-tablet.png, img/catalog/buckwheat-1000-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/buckwheat-1000-mobile.png" width="140" height="107"
+                        srcset="img/catalog/buckwheat-1000-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 500 г со вкусом гречки.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 1000 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">500 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Гречка</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">1000 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
             <li class="catalog__item">
               <article class="catalog-cards product-card">
-                <div class="product-card__wrapper">
-                  <div class="product-card__wrapper-img">
-                    <a class="product-card__link link" href="#">
-                      <picture>
-                        <source media="(min-width: 768px)"
-                          srcset="img/catalog/rice-500-tablet.png, img/catalog/rice-500-tablet @2x.png 2x" width="200"
-                          height="210">
-                        <img class="product-card__image" src="img/catalog/rice-500-mobile.png" width="140" height="107"
-                          srcset="img/catalog/rice-500-mobile@ 2x.png 2x"
-                          alt="Упаковка питания Cat Energy PRO 500 г со вкусом риса.">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="product-card__inner">
-                    <a class="product-card__link-title link" href="#">
-                      <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
-                    </a>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Масса</dt>
-                      <dd class="product-card__value">500 г</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Вкус</dt>
-                      <dd class="product-card__value">Рис</dd>
-                    </dl>
-                    <dl class="product-card__attributes">
-                      <dt class="product-card__desc">Цена</dt>
-                      <dd class="product-card__value">700 ₽</dd>
-                    </dl>
-                  </div>
-                  <button class="product-card__button button" type="button">Заказать</button>
+                <div class="product-card__wrapper-img">
+                  <a class="product-card__link link" href="#">
+                    <picture>
+                      <source media="(min-width: 768px)"
+                        srcset="img/catalog/rice-500-tablet.png, img/catalog/rice-500-tablet@2x.png 2x" width="200"
+                        height="210">
+                      <img class="product-card__image" src="img/catalog/rice-500-mobile.png" width="140" height="107"
+                        srcset="img/catalog/rice-500-mobile@2x.png 2x"
+                        alt="Упаковка питания Cat Energy PRO 500 г со вкусом риса.">
+                    </picture>
+                  </a>
                 </div>
+                <div class="product-card__inner">
+                  <a class="product-card__link-title link" href="#">
+                    <h2 class="product-card__title title">Cat Energy<br>PRO 500 г</h2>
+                  </a>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Масса</dt>
+                    <dd class="product-card__value">500 г</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Вкус</dt>
+                    <dd class="product-card__value">Рис</dd>
+                  </dl>
+                  <dl class="product-card__attributes">
+                    <dt class="product-card__desc">Цена</dt>
+                    <dd class="product-card__value">700 ₽</dd>
+                  </dl>
+                </div>
+                <button class="product-card__button button" type="button">Заказать</button>
               </article>
             </li>
-            <li class="catalog__item catalog-item--to-all">
-              <article class="catalog-cards product-card product-card__to-all">
-                <div class="product-card__wrapper product-card__wrapper--to-all">
+            <li class="catalog__item catalog__item--to-all">
+              <article class="catalog-cards product-card product-card--to-all">
+                <div class="product-card product-card__wrapper--to-all">
                   <div class="product-card__inner product-card__inner--to-all">
-                    <span class="to-all__picture"></span>
+                    <span class="product-card__picture"></span>
                     <a class="product-card__link-title product-card__link--to-all link" href="#">
                       <h2 class="product-card__title product-card__title--to-all title">Показать еще 100500 товаров</h2>
                     </a>
                     <p class="product-card__subtitle">На самом деле вкусов гораздо больше!</p>
                   </div>
-                  <button class="product-card__button button button__to-all" type="button">Показать все</button>
+                  <button class="product-card__button product-card__button--to-all button" type="button">Показать все</button>
                 </div>
               </article>
             </li>
@@ -322,8 +310,8 @@
       </section>
 
       <section class="additional">
-        <div class="additional__header">
-          <div class="additioanal__wrapper">
+        <div class="additional__header additional-header">
+          <div class="additioanal-header__wrapper">
             <h2 class="additional__title title">Дополнительные товары</h2>
           </div>
         </div>
@@ -370,9 +358,9 @@
               </div>
             </li>
           </ul>
-          <div class="addinational__offer offer">
-              <span class="offer__icon"></span>
-              <p class="offer__subtitle">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="addinational-offer">
+              <span class="addinational-offer__icon"></span>
+              <p class="addinational-offer__subtitle">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -384,7 +372,7 @@
       </div>
       <div class="footer-location footer-location-catalog">
         <h2 class="footer-location__title title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-        <adress class="footer-location__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</adress>
+        <address class="footer-location__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198189!2d30.320472477345316!3d59.938719162093555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1694027143706!5m2!1sru!2sru"
         width="320"

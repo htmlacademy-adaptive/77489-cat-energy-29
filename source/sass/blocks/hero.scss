@@ -49,6 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 460px;
     padding: 0;
     padding-top: 159px;
   }
@@ -72,6 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 460px;
     padding: 0;
   }
 }
