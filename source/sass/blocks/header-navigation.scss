@@ -109,9 +109,17 @@
         background: $green-300;
 
         @media (min-width: $desktop-width) {
-          background: $default-white;
+          top: 35px;
         }
       }
+    }
+  }
+}
+
+.header--index .header-navigation__item {
+  @media (min-width: $desktop-width) {
+    &::after{
+      background: $default-white;
     }
   }
 }
