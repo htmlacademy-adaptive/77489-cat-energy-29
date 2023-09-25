@@ -4,7 +4,7 @@
 
 .advantages__title {
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -16,7 +16,7 @@
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 26px;
   counter-reset: advantages-counter;
 
   @media (min-width: $tablet-width) {

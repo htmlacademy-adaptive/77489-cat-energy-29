@@ -75,6 +75,10 @@
   &:focus {
     background-image: url("../img/slider-hover.svg#slider-hover");
   }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 
@@ -93,4 +97,8 @@
 .slider__button:hover + .slider__line,
 .slider__button:focus + .slider__line {
   background-color: $green-300;
+}
+
+.slider__button:active + .slider__line {
+  opacity: 60%;
 }

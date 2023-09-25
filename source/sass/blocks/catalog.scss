@@ -46,3 +46,18 @@
     border: none;
   }
 }
+
+.catalog-cards--to-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 511px;
+    background: none;
+    padding-top: 96px;
+  }
+}

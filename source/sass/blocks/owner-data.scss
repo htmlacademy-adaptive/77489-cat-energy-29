@@ -95,7 +95,6 @@
   pointer-events: none;
 }
 
-.owner-data__input:hover ~ .owner-data__icon,
 .owner-data__input:focus ~ .owner-data__icon {
   .owner-data__icon-svg {
     color: $green-300;

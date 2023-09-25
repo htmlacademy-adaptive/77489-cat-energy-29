@@ -1,5 +1,6 @@
 .example {
   background-color: $grey-100;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to top, $grey-100 30%, $default-white 30%);
