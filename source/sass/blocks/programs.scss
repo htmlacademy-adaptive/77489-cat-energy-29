@@ -1,6 +1,6 @@
 .programs {
   @media (min-width: $tablet-width) {
-    margin-bottom: 155px;
+    margin-bottom: 50px;
   }
 }
 
@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-    padding-top: 77px;
+    padding-top: 66px;
     padding-left: 52px;
     padding-bottom: 53px;
     padding-right: 52px;
@@ -67,10 +67,12 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 340px;
+    width: 339px;
+    margin-bottom: 52px;
 
     @media (min-width: $desktop-width) {
       width: 100%;
+      margin-bottom: 31px;
     }
   }
 }

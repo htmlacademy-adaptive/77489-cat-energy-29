@@ -1,4 +1,5 @@
 .hero {
+  min-height: 480px;
   background-image:
     url("../img/hero-background-mobile.jpg"),
     linear-gradient(to bottom, $bg-green 64%, $default-white 64%);
@@ -14,10 +15,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     background: none;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
     background-image:
       url("../img/hero-background-desktop.jpg"),
       linear-gradient(to left, $bg-green 50%, $default-white 50%);
@@ -38,7 +41,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    position: relative;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -59,11 +62,13 @@
     font-weight: 400;
     color: $default-black;
     text-align: left;
-    padding-left: 120px;
+    padding-left: 90px;
+    padding-top: 43px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 460px;
+    max-width: 498px;
     margin-bottom: 40px;
     padding: 0;
     padding-top: 224px;
@@ -85,7 +90,8 @@
     font-weight: 400;
     color: $default-black;
     text-align: left;
-    padding-left: 120px;
+    padding-left: 90px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,7 +113,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-35%, -50%);
+    transform: translate(-30%, -31%);
     width: 552px;
     height: 499px;
   }
@@ -117,11 +123,12 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
+  order: 4;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 215px;
-    left: 150px;
+    top: 370px;
+    left: 120px;
     font-size: 20px;
     line-height: 26px;
     min-width: max-content;
@@ -130,7 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 375px;
-    left: 110px;
+    top: 456px;
+    left: 190px;
   }
 }

@@ -1,5 +1,13 @@
 .advantages {
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__title {
@@ -49,7 +57,7 @@
     width: 230px;
     min-height: 280px;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 111px;
 
     &::after {
       position: absolute;
@@ -67,16 +75,32 @@
 
 .advantages__item--leaf {
   background-image: url("../img/leaf.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 80px;
+  }
 }
 
 .advantages__item--washing {
   background-image: url("../img/washing.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 80px;
+  }
 }
 
 .advantages__item--cutlery {
   background-image: url("../img/cutlery.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 80px;
+  }
 }
 
 .advantages__item--clock {
   background-image: url("../img/clock.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 80px 80px;
+  }
 }
