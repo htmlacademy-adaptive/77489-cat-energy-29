@@ -41,7 +41,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +113,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-30%, -31%);
+    transform: translate(-30%, -40%);
     width: 552px;
     height: 499px;
   }
@@ -127,7 +127,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 370px;
+    top: 273px;
     left: 120px;
     font-size: 20px;
     line-height: 26px;
