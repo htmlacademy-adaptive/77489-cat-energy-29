@@ -6,6 +6,10 @@
   background-position: top;
   margin-bottom: 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-background-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
   }
@@ -16,6 +20,10 @@
       linear-gradient(to left, $bg-green 50%, $default-white 50%);
     background-repeat: no-repeat;
     background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-background-desktop@2x.jpg");
+    }
   }
 }
 
@@ -84,11 +92,18 @@
 .hero__product {
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-35%, -50%);
+    width: 552px;
+    height: 499px;
   }
 }
 
