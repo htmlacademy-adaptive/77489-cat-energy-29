@@ -123,12 +123,9 @@
   color: $color-font;
   background-color: $grey-200;
 
-  &:hover {
-    background-color: $grey-500;
-  }
-
+  &:hover,
   &:active {
-    opacity: 30%;
+    background-color: $grey-500;
   }
 }
 

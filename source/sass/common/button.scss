@@ -12,10 +12,11 @@
   &:hover {
     background-color: $green-200;
   }
-}
 
-.button__desc {
   &:active {
-    opacity: 30%;
+    .button__desc {
+      opacity: 30%;
+    }
   }
 }
+
