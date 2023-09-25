@@ -3,9 +3,11 @@
     padding: 27px;
     padding-top: 23px;
     border: 1px solid $grey-300;
-    margin-bottom: 45px;
+    margin-bottom: 17px;
+    margin-left: 40px;
 
     @media (min-width: $desktop-width) {
+      margin-left: 0;
       margin-bottom: 0;
     }
   }
