@@ -60,6 +60,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 87px;
   }
 }
 
@@ -67,7 +68,11 @@
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -124,6 +129,8 @@
 
   @media (min-width: $desktop-width) {
     width: 200px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -141,35 +148,44 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 280px;
+  width: 280px;
   height: 290px;
   background-color: rgba(104, 183, 56, 1);
-  background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/offer-background.jpg");
+  background-image: url("../img/offer-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: 280px 290px;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offer-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
+    width: 707px;
     height: 200px;
-    background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/offer-background-tablet.jpg");
+    background-image: url("../img/offer-background-tablet.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/offer-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     justify-content: space-evenly;
+    width: 245px;
+    height: 288px;
+    background-image: url("../img/offer-background-desktop.jpg");
+    background-size: 245px 288px;
   }
 }
 
 @media (min-resolution: 2dppx) {
   .addinational__offer {
-    background-color: rgba(104, 183, 56, 1);
-    background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/offer-background @2x.jpg");
-    background-size: cover;
+    background-image: url("../img/offer-background-desktop@2x.jpg");
   }
 }
 

@@ -7,7 +7,7 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 17px;
+  padding-bottom:25px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -33,18 +33,35 @@
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    width: 250px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin-bottom: 37px;
   }
 }
 
 .product-card__image {
   grid-area: product;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 210px;
+  }
 }
 
 .product-card__button {
   grid-area: button;
   width: 100%;
+  padding: 15px;
 
   &:hover {
     background-color: $green-200;
@@ -59,12 +76,25 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
   }
 }
 
-.product-card__title--to-all {
+
+.product-card__inner--to-all .product-card__title {
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.product-card__inner--to-all .product-card__subtitle {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .product-card__link-title {
@@ -80,9 +110,13 @@
   grid-area: attributes;
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
     padding: 4px;
     border-bottom: 1px solid $grey-900;
   }
@@ -92,9 +126,13 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+  }
 }
 
-.product-card__wrapper--to-all {
+.product-card--to-all {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,21 +152,6 @@
   }
 }
 
-.product-card--to-all {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-  padding-bottom: 25px;
-
-  @media (min-width: $tablet-width) {
-    position: relative;
-    min-height: 511px;
-    background: none;
-    padding-top: 96px;
-  }
-}
-
 .product-card__inner--to-all {
   margin: 0 auto;
 }
@@ -137,12 +160,9 @@
   color: $color-font;
   background-color: $grey-200;
 
-  &:hover {
-    background-color: $grey-500;
-  }
-
+  &:hover,
   &:active {
-    opacity: 30%;
+    background-color: $grey-500;
   }
 }
 

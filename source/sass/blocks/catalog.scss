@@ -15,8 +15,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 65px;
-    margin-bottom: 84px;
+    margin-top: 43px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
   }
 }
 
@@ -44,5 +48,19 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+}
+
+.catalog-cards--to-all {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 511px;
+    background: none;
+    padding-top: 96px;
   }
 }

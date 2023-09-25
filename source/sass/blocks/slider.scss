@@ -6,6 +6,12 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -24,11 +30,11 @@
   background-color: $grey-100;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $grey-100 294px, $default-white 294px);
+    background: linear-gradient(to top, $grey-100 357px, $default-white 294px);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to top, $grey-100 351px, $default-white 351px);
+    background: linear-gradient(to top, $grey-100 351px, $default-white 335px);
   }
 }
 
@@ -75,6 +81,10 @@
   &:focus {
     background-image: url("../img/slider-hover.svg#slider-hover");
   }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 
@@ -93,4 +103,8 @@
 .slider__button:hover + .slider__line,
 .slider__button:focus + .slider__line {
   background-color: $green-300;
+}
+
+.slider__button:active + .slider__line {
+  opacity: 60%;
 }

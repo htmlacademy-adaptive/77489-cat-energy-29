@@ -1,6 +1,6 @@
 .programs {
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 }
 
@@ -18,13 +18,13 @@
   margin-bottom: 20px;
   padding-top: 21px;
   padding-left: 20px;
-  padding-bottom: 18px;
-  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-right: 25px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-    padding-top: 77px;
+    padding-top: 66px;
     padding-left: 52px;
     padding-bottom: 53px;
     padding-right: 52px;
@@ -57,15 +57,22 @@
 }
 
 .programs-weight__decription {
-  margin-bottom: 38px;
+  margin-bottom: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 23px;
+    border-bottom: 1px solid $grey-900;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 340px;
+    width: 339px;
+    margin-bottom: 52px;
 
     @media (min-width: $desktop-width) {
       width: 100%;
+      margin-bottom: 31px;
     }
   }
 }

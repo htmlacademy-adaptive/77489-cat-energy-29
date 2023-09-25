@@ -14,6 +14,9 @@
   }
 
   &:active {
-    opacity: 30%;
+    .button__desc {
+      opacity: 30%;
+    }
   }
 }
+

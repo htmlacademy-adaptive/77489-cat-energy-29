@@ -21,8 +21,8 @@
         <a class="header__logo link" href="index.html">
           <span class="visually-hidden">На главную</span>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="70" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="60" height="50">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="logo" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
           </picture>
           <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Тектовый логотип сайта">
@@ -118,6 +118,7 @@
                     <svg class="owner-data__icon-svg" width="20" height="20" aria-label="Ввести телефон" focusable="false">
                       <use href="img/sprite.svg#icon-phone"></use>
                     </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,7 +164,9 @@
                   </li>
                 </ul>
                 <div class="additional-form__button-box">
-                  <button class="additional-form__button button" type="submit">Отправить заявку</button>
+                  <button class="additional-form__button button" type="submit">
+                    <span class="button__desc">Отправить заявку</span>
+                  </button>
                   <p class="additional-form__sign">* — Обязательные поля</p>
                 </div>
               </div>
