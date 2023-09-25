@@ -146,14 +146,17 @@
   background-color: rgba(104, 183, 56, 1);
   background-image: url("../img/offer-background.jpg");
   background-repeat: no-repeat;
+  background-size: 280px 290px;
   background-position: center;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offer-background@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-around;
     height: 200px;
-    background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/offer-background-tablet.jpg");
+    background-image: url("../img/offer-background-tablet.jpg");
     background-size: cover;
   }
 

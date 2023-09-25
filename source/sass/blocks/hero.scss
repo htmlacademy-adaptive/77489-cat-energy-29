@@ -7,7 +7,9 @@
   margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-background-mobile@2x.jpg");
+    background-image:
+    url("../img/hero-background-mobile@2x.jpg"),
+    linear-gradient(to bottom, $bg-green 64%, $default-white 64%);
   }
 
   @media (min-width: $tablet-width) {
@@ -22,7 +24,9 @@
     background-position: right;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-background-desktop@2x.jpg");
+      background-image:
+      url("../img/hero-background-desktop@2x.jpg"),
+      linear-gradient(to left, $bg-green 50%, $default-white 50%);
     }
   }
 }
