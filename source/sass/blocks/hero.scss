@@ -3,7 +3,8 @@
     url("../img/hero-background-mobile.jpg"),
     linear-gradient(to bottom, $bg-green 64%, $default-white 64%);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
+  background-size: auto 308px, 100% 100%;
   margin-bottom: 20px;
 
   @media (min-resolution: 2dppx) {
@@ -21,7 +22,8 @@
       url("../img/hero-background-desktop.jpg"),
       linear-gradient(to left, $bg-green 50%, $default-white 50%);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right bottom;
+    background-size: 50% auto, 100% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -40,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 692px;
+    min-height: 692px;
   }
 }
 
