@@ -40,6 +40,16 @@
 .product-card__image {
   grid-area: product;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 210px;
+  }
 }
 
 .product-card__button {
